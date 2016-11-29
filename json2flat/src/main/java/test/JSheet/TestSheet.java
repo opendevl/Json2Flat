@@ -1,6 +1,7 @@
 package test.JSheet;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
@@ -11,22 +12,28 @@ public class TestSheet {
 	public static void main(String[] args) throws IOException{
 		
 		
-		String str = new String(Files.readAllBytes(Paths.get("/home/aptus/workspace/mvgitproj/Json2Flat/json2flat/src/main/resources/EPL_JSON.json")));
-		JFlat x = new JFlat(str);
+		String str = new String(Files.readAllBytes(Paths.get("/home/aptus/workspace/mvgitproj/Json2Flat/json2flat/src/main/resources/test.json")));
+		JFlat flatMe = new JFlat(str);
 		
-		List<Object[]> json2csv = x.jsonToSheet(); 
+		List<Object[]> json2csv = flatMe.jsonToSheet(); 
 		
-		System.out.println();
+		PrintWriter writer = new PrintWriter("/home/aptus/Desktop/json2csv.csv", "UTF-8");
+		boolean comma = false;
 		for(Object[] o : json2csv){
+			comma = false;
 			for(Object t : o){
-				if(t==null)
-					System.out.print("--");
-				else
-					System.out.print(t.toString());
-				System.out.print("\t|\t");
+				if(t==null){
+					writer.print(comma == true ? "," : "");
+				}
+				else{
+					writer.print(comma == true ? ","+t.toString() : t.toString());
+				}
+				if(comma == false)
+					comma = true;
 			}
-			System.out.println();
+			writer.println();
 		}
+		writer.close();
 	}
 
 }

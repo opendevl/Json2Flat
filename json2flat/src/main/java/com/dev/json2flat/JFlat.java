@@ -109,7 +109,7 @@ public class JFlat {
 		}
 		matrix.add(header);
 		
-		matrix.add(make(new Object[unique.size()], new Object[unique.size()], ele, "/"));
+		matrix.add(make2D(new Object[unique.size()], new Object[unique.size()], ele, "/"));
 		
 		Object last[] = matrix.get(matrix.size()-1);
 		Object secondLast[] = matrix.get(matrix.size()-2);
@@ -139,7 +139,7 @@ public class JFlat {
 		return matrix;
 	}
 	
-	public Object[] make(Object[] cur, Object[] old, JsonElement ele, String path){
+	public Object[] make2D(Object[] cur, Object[] old, JsonElement ele, String path){
 		cur = old.clone();
 		
 		boolean gotArray = false;
@@ -152,6 +152,7 @@ public class JFlat {
 					tmpPath = path+entry.getKey();
 					tmpPath = tmpPath.replaceAll("(\\/\\/[0-9]+)", "/").replaceAll("\\/\\/+", "/");
 					tmpPath = tmpPath.replaceAll("\\/[0-9]+\\/", "/");
+					//tmpPath = tmpPath.replaceAll("\\(obj\\)\\/", "/");
 					//System.out.println(tmpPath);
 					if(unique.contains(tmpPath)){
 						int index = unique.indexOf(tmpPath);
@@ -161,10 +162,10 @@ public class JFlat {
 					tmpPath = null;
 				}
 				else if(entry.getValue().isJsonObject()){
-					cur = (make(new Object[unique.size()], cur, entry.getValue().getAsJsonObject(), path + entry.getKey() + "/"));
+					cur = (make2D(new Object[unique.size()], cur, entry.getValue().getAsJsonObject(), path + entry.getKey() + "/"));
 				}
 				else if(entry.getValue().isJsonArray()){
-					cur = make(new Object[unique.size()], cur, entry.getValue().getAsJsonArray(), path + entry.getKey() + "/");
+					cur = make2D(new Object[unique.size()], cur, entry.getValue().getAsJsonArray(), path + entry.getKey() + "/");
 					
 				}
 			}
@@ -191,12 +192,12 @@ public class JFlat {
 				else{					
 					if(tmp.isJsonObject()){
 						gotArray = isInnerArray(tmp);
-						matrix.add(make(new Object[unique.size()], cur, tmp.getAsJsonObject(), path + arrIndex + "/"));
+						matrix.add(make2D(new Object[unique.size()], cur, tmp.getAsJsonObject(), path + arrIndex + "/"));
 						if(gotArray){
 							matrix.remove(matrix.size()-1);
 						}
 					}else if(tmp.isJsonArray()){
-						make(new Object[unique.size()], cur, tmp.getAsJsonArray(), path + arrIndex + "//");
+						make2D(new Object[unique.size()], cur, tmp.getAsJsonArray(), path + arrIndex + "//");
 					}
 				}
 				arrIndex++;

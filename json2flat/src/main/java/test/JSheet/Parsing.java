@@ -1,8 +1,10 @@
 package test.JSheet;
 
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.PrintWriter;
 import java.io.Reader;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
@@ -33,8 +35,8 @@ public class Parsing {
 	
 	static String tmpPath = null;
 	
-	public static void main(String[] args) throws UnsupportedEncodingException{
-		InputStream is = Parsing.class.getResourceAsStream("/fb.json") ;  
+	public static void main(String[] args) throws UnsupportedEncodingException, FileNotFoundException{
+		InputStream is = Parsing.class.getResourceAsStream("/test.json") ;  
 		Reader reader = new BufferedReader(new InputStreamReader(is, "UTF-8"));
 		JsonElement x = new JsonParser().parse(reader);
 		
@@ -101,7 +103,7 @@ public class Parsing {
 		
 		System.out.println("=============" + unique.size()) ;
 		
-		arr.add(make(new Object[unique.size()], new Object[unique.size()], x, "/"));
+		arr.add(make2D(new Object[unique.size()], new Object[unique.size()], x, "/"));
 		//makePremObj(new Object[unique.size()], new Object[unique.size()], x, "/");
 		
 		
@@ -121,9 +123,28 @@ public class Parsing {
 			}
 			System.out.println();
 		}
+		
+		
+		PrintWriter writer = new PrintWriter("/home/aptus/Desktop/json2csv.csv", "UTF-8");
+		boolean comma = false;
+		for(Object[] o : arr){
+			comma = false;
+			for(Object t : o){
+				if(t==null){
+					writer.print(comma == true ? "," : "");
+				}
+				else{
+					writer.print(comma == true ? ","+t.toString() : t.toString());
+				}
+				if(comma == false)
+					comma = true;
+			}
+			writer.println();
+		}
+		writer.close();
 	}
 	
-	public static Object[] make(Object[] cur, Object[] old, JsonElement ele, String path){
+	public static Object[] make2D(Object[] cur, Object[] old, JsonElement ele, String path){
 		cur = old.clone();
 		
 		boolean gotArray = false;
@@ -137,6 +158,7 @@ public class Parsing {
 					//System.out.println(tmpPath);
 					tmpPath = tmpPath.replaceAll("(\\/\\/[0-9]+)", "/").replaceAll("\\/\\/+", "/");
 					tmpPath = tmpPath.replaceAll("\\/[0-9]+\\/", "/");
+					tmpPath = tmpPath.replaceAll("\\(o\\)\\/", "/");
 					System.out.println(tmpPath);
 					if(unique.contains(tmpPath)){
 						int index = unique.indexOf(tmpPath);
@@ -145,10 +167,10 @@ public class Parsing {
 					tmpPath = null;
 				}
 				else if(entry.getValue().isJsonObject()){
-					cur = (make(new Object[unique.size()], cur, entry.getValue().getAsJsonObject(), path + entry.getKey() + "/"));
+					cur = (make2D(new Object[unique.size()], cur, entry.getValue().getAsJsonObject(), path + entry.getKey() + "(o)/"));
 				}
 				else if(entry.getValue().isJsonArray()){
-					cur = make(new Object[unique.size()], cur, entry.getValue().getAsJsonArray(), path + entry.getKey() + "//");
+					cur = make2D(new Object[unique.size()], cur, entry.getValue().getAsJsonArray(), path + entry.getKey() + "//");
 					
 				}
 			}
@@ -175,12 +197,12 @@ public class Parsing {
 				else{					
 					if(tmp.isJsonObject()){
 						gotArray = isInnerArray(tmp);
-						arr.add(make(new Object[unique.size()], cur, tmp.getAsJsonObject(), path + arrIndex + "/"));
+						arr.add(make2D(new Object[unique.size()], cur, tmp.getAsJsonObject(), path + arrIndex + "/"));
 						if(gotArray){
 							arr.remove(arr.size()-1);
 						}
 					}else if(tmp.isJsonArray()){
-						make(new Object[unique.size()], cur, tmp.getAsJsonArray(), path + arrIndex + "//");
+						make2D(new Object[unique.size()], cur, tmp.getAsJsonArray(), path + arrIndex + "//");
 					}
 					
 					
