@@ -1,0 +1,59 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.dev</groupId>
+  <version>1.0.0</version>
+  <name>Json to csv conversion</name>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <!-- <resources>
+    	<resource>
+    		<directory>src/main/resources</directory>
+    		<excludes>
+    			<exclude>*.json</exclude>
+    		</excludes>
+    	</resource>
+    </resources> -->
+    <pluginManagement>
+	    <plugins>
+	    	<plugin>
+			    <groupId>org.apache.maven.plugins</groupId>
+			    <artifactId>maven-dependency-plugin</artifactId>
+			    <configuration>
+			    	<excludePackageNames>com.dev.json2flat.*</excludePackageNames>
+			        <outputDirectory>
+			            ${project.build.directory}
+			        </outputDirectory>
+			    </configuration>
+			</plugin>
+	      	<plugin>
+	        <artifactId>maven-assembly-plugin</artifactId>
+		      <configuration>
+		        <archive>
+		          <manifest>
+		            <mainClass>fully.qualified.MainClass</mainClass>
+		          </manifest>
+		        </archive>
+		        <descriptorRefs>
+		          <descriptorRef>jar-with-dependencies</descriptorRef>
+		        </descriptorRefs>
+		      </configuration>
+	      </plugin>
+	    </plugins>
+    </pluginManagement>
+  </build>
+  <dependencies>
+  	<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+	<dependency>
+	    <groupId>com.google.code.gson</groupId>
+	    <artifactId>gson</artifactId>
+	    <version>2.7</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/com.jayway.jsonpath/json-path -->
+	<dependency>
+	    <groupId>com.jayway.jsonpath</groupId>
+	    <artifactId>json-path</artifactId>
+	    <version>2.2.0</version>
+	</dependency>  	  
+  </dependencies>
+  <artifactId>json2flat</artifactId>
+</project>

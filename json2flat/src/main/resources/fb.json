@@ -1,0 +1,1774 @@
+{
+  "data": [
+    {
+      "account_id": "10155225473138747",
+      "account_name": "Yellowfin",
+      "ad_id": "23842502141030443",
+      "ad_name": "Default name - Website Clicks",
+      "adset_id": "23842502140850443",
+      "adset_name": "US, AU, GB - 30-55",
+      "campaign_id": "23842501952630443",
+      "campaign_name": "Website Clicks",
+      "app_store_clicks": "0",
+      "canvas_avg_view_percent": "0",
+      "canvas_avg_view_time": "0",
+      "clicks": "0",
+      "cost_per_inline_link_click": "0",
+      "cost_per_inline_post_engagement": "0",
+      "cost_per_total_action": "0",
+      "cost_per_unique_click": "0",
+      "cost_per_unique_inline_link_click": "0",
+      "cpc": "0",
+      "cpm": "0",
+      "cpp": "0",
+      "ctr": "0",
+      "date_start": "2016-08-05",
+      "date_stop": "2016-09-05",
+      "deeplink_clicks": "0",
+      "frequency": "0",
+      "impressions": "4",
+      "inline_link_click_ctr": "0",
+      "inline_link_clicks": "0",
+      "inline_post_engagement": "0",
+      "objective": "LINK_CLICKS",
+      "reach": "0",
+      "social_clicks": "0",
+      "social_impressions": "0",
+      "social_reach": "0",
+      "spend": "0",
+      "total_action_value": "0",
+      "total_actions": "0",
+      "total_unique_actions": "0",
+      "unique_clicks": "0",
+      "unique_ctr": "0",
+      "unique_impressions": "0",
+      "unique_inline_link_click_ctr": "0",
+      "unique_inline_link_clicks": "0",
+      "unique_link_clicks_ctr": "0",
+      "unique_social_clicks": "0",
+      "unique_social_impressions": "0",
+      "website_clicks": "0",
+      "age": "13-17",
+      "gender": "female"
+    },
+    {
+      "account_id": "10155225473138747",
+      "account_name": "Yellowfin",
+      "ad_id": "23842502141030443",
+      "ad_name": "Default name - Website Clicks",
+      "adset_id": "23842502140850443",
+      "adset_name": "US, AU, GB - 30-55",
+      "campaign_id": "23842501952630443",
+      "campaign_name": "Website Clicks",
+      "app_store_clicks": "0",
+      "canvas_avg_view_percent": "0",
+      "canvas_avg_view_time": "0",
+      "clicks": "0",
+      "cost_per_inline_link_click": "0",
+      "cost_per_inline_post_engagement": "0",
+      "cost_per_total_action": "0",
+      "cost_per_unique_click": "0",
+      "cost_per_unique_inline_link_click": "0",
+      "cpc": "0",
+      "cpm": "0",
+      "cpp": "0",
+      "ctr": "0",
+      "date_start": "2016-08-05",
+      "date_stop": "2016-09-05",
+      "deeplink_clicks": "0",
+      "frequency": "0",
+      "impressions": "1",
+      "inline_link_click_ctr": "0",
+      "inline_link_clicks": "0",
+      "inline_post_engagement": "0",
+      "objective": "LINK_CLICKS",
+      "reach": "0",
+      "social_clicks": "0",
+      "social_impressions": "0",
+      "social_reach": "0",
+      "spend": "0",
+      "total_action_value": "0",
+      "total_actions": "0",
+      "total_unique_actions": "0",
+      "unique_clicks": "0",
+      "unique_ctr": "0",
+      "unique_impressions": "0",
+      "unique_inline_link_click_ctr": "0",
+      "unique_inline_link_clicks": "0",
+      "unique_link_clicks_ctr": "0",
+      "unique_social_clicks": "0",
+      "unique_social_impressions": "0",
+      "website_clicks": "0",
+      "age": "13-17",
+      "gender": "male"
+    },
+    {
+      "account_id": "10155225473138747",
+      "account_name": "Yellowfin",
+      "ad_id": "23842502141030443",
+      "ad_name": "Default name - Website Clicks",
+      "adset_id": "23842502140850443",
+      "adset_name": "US, AU, GB - 30-55",
+      "campaign_id": "23842501952630443",
+      "campaign_name": "Website Clicks",
+      "app_store_clicks": "0",
+      "canvas_avg_view_percent": "0",
+      "canvas_avg_view_time": "0",
+      "clicks": "10",
+      "cost_per_inline_link_click": "0",
+      "cost_per_inline_post_engagement": "0",
+      "cost_per_total_action": "0",
+      "cost_per_unique_click": "0",
+      "cost_per_unique_inline_link_click": "0",
+      "cpc": "0",
+      "cpm": "0",
+      "cpp": "0",
+      "ctr": "2.066116",
+      "date_start": "2016-08-05",
+      "date_stop": "2016-09-05",
+      "deeplink_clicks": "0",
+      "frequency": "0",
+      "impressions": "484",
+      "inline_link_click_ctr": "0",
+      "inline_link_clicks": "0",
+      "inline_post_engagement": "0",
+      "objective": "LINK_CLICKS",
+      "reach": "0",
+      "social_clicks": "0",
+      "social_impressions": "0",
+      "social_reach": "0",
+      "spend": "0",
+      "total_action_value": "0",
+      "total_actions": "0",
+      "total_unique_actions": "0",
+      "unique_clicks": "0",
+      "unique_ctr": "0",
+      "unique_impressions": "0",
+      "unique_inline_link_click_ctr": "0",
+      "unique_inline_link_clicks": "0",
+      "unique_link_clicks_ctr": "0",
+      "unique_social_clicks": "0",
+      "unique_social_impressions": "0",
+      "website_clicks": "0",
+      "age": "13-17",
+      "gender": "unknown"
+    },
+    {
+      "account_id": "10155225473138747",
+      "account_name": "Yellowfin",
+      "ad_id": "23842502141030443",
+      "ad_name": "Default name - Website Clicks",
+      "adset_id": "23842502140850443",
+      "adset_name": "US, AU, GB - 30-55",
+      "campaign_id": "23842501952630443",
+      "campaign_name": "Website Clicks",
+      "app_store_clicks": "0",
+      "canvas_avg_view_percent": "0",
+      "canvas_avg_view_time": "0",
+      "clicks": "0",
+      "cost_per_inline_link_click": "0",
+      "cost_per_inline_post_engagement": "0",
+      "cost_per_total_action": "0",
+      "cost_per_unique_click": "0",
+      "cost_per_unique_inline_link_click": "0",
+      "cpc": "0",
+      "cpm": "0",
+      "cpp": "0",
+      "ctr": "0",
+      "date_start": "2016-08-05",
+      "date_stop": "2016-09-05",
+      "deeplink_clicks": "0",
+      "frequency": "0",
+      "impressions": "16",
+      "inline_link_click_ctr": "0",
+      "inline_link_clicks": "0",
+      "inline_post_engagement": "0",
+      "objective": "LINK_CLICKS",
+      "reach": "0",
+      "social_clicks": "0",
+      "social_impressions": "0",
+      "social_reach": "0",
+      "spend": "0",
+      "total_action_value": "0",
+      "total_actions": "0",
+      "total_unique_actions": "0",
+      "unique_clicks": "0",
+      "unique_ctr": "0",
+      "unique_impressions": "0",
+      "unique_inline_link_click_ctr": "0",
+      "unique_inline_link_clicks": "0",
+      "unique_link_clicks_ctr": "0",
+      "unique_social_clicks": "0",
+      "unique_social_impressions": "0",
+      "website_clicks": "0",
+      "age": "18-24",
+      "gender": "female"
+    },
+    {
+      "account_id": "10155225473138747",
+      "account_name": "Yellowfin",
+      "ad_id": "23842502141030443",
+      "ad_name": "Default name - Website Clicks",
+      "adset_id": "23842502140850443",
+      "adset_name": "US, AU, GB - 30-55",
+      "campaign_id": "23842501952630443",
+      "campaign_name": "Website Clicks",
+      "app_store_clicks": "0",
+      "canvas_avg_view_percent": "0",
+      "canvas_avg_view_time": "0",
+      "clicks": "0",
+      "cost_per_inline_link_click": "0",
+      "cost_per_inline_post_engagement": "0",
+      "cost_per_total_action": "0",
+      "cost_per_unique_click": "0",
+      "cost_per_unique_inline_link_click": "0",
+      "cpc": "0",
+      "cpm": "0",
+      "cpp": "0",
+      "ctr": "0",
+      "date_start": "2016-08-05",
+      "date_stop": "2016-09-05",
+      "deeplink_clicks": "0",
+      "frequency": "0",
+      "impressions": "11",
+      "inline_link_click_ctr": "0",
+      "inline_link_clicks": "0",
+      "inline_post_engagement": "0",
+      "objective": "LINK_CLICKS",
+      "reach": "0",
+      "social_clicks": "0",
+      "social_impressions": "0",
+      "social_reach": "0",
+      "spend": "0",
+      "total_action_value": "0",
+      "total_actions": "0",
+      "total_unique_actions": "0",
+      "unique_clicks": "0",
+      "unique_ctr": "0",
+      "unique_impressions": "0",
+      "unique_inline_link_click_ctr": "0",
+      "unique_inline_link_clicks": "0",
+      "unique_link_clicks_ctr": "0",
+      "unique_social_clicks": "0",
+      "unique_social_impressions": "0",
+      "website_clicks": "0",
+      "age": "18-24",
+      "gender": "male"
+    },
+    {
+      "account_id": "10155225473138747",
+      "account_name": "Yellowfin",
+      "ad_id": "23842502141030443",
+      "ad_name": "Default name - Website Clicks",
+      "adset_id": "23842502140850443",
+      "adset_name": "US, AU, GB - 30-55",
+      "campaign_id": "23842501952630443",
+      "campaign_name": "Website Clicks",
+      "app_store_clicks": "0",
+      "canvas_avg_view_percent": "0",
+      "canvas_avg_view_time": "0",
+      "clicks": "131",
+      "cost_per_inline_link_click": "0.165758",
+      "cost_per_inline_post_engagement": "0.165758",
+      "cost_per_total_action": "0.165758",
+      "cost_per_unique_click": "0.179344",
+      "cost_per_unique_inline_link_click": "0.177886",
+      "cpc": "0.167023",
+      "cpm": "0.907583",
+      "cpp": "2.033268",
+      "ctr": "0.543388",
+      "date_start": "2016-08-05",
+      "date_stop": "2016-09-05",
+      "deeplink_clicks": "0",
+      "frequency": "2.240312",
+      "impressions": "24108",
+      "inline_link_click_ctr": "0.547536",
+      "inline_link_clicks": "132",
+      "inline_post_engagement": "132",
+      "objective": "LINK_CLICKS",
+      "reach": "10761",
+      "social_clicks": "0",
+      "social_impressions": "0",
+      "social_reach": "0",
+      "spend": "21.88",
+      "total_action_value": "0",
+      "total_actions": "132",
+      "total_unique_actions": "123",
+      "unique_clicks": "122",
+      "unique_ctr": "1.133724",
+      "unique_impressions": "10761",
+      "unique_inline_link_click_ctr": "1.143016",
+      "unique_inline_link_clicks": "123",
+      "unique_link_clicks_ctr": "1.143016",
+      "unique_social_clicks": "0",
+      "unique_social_impressions": "0",
+      "website_clicks": "0",
+      "actions": [
+        {
+          "action_type": "link_click",
+          "value": "132"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "132"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "132"
+        }
+      ],
+      "cost_per_action_type": [
+        {
+          "action_type": "link_click",
+          "value": "0.165758"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "0.165758"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "0.165758"
+        }
+      ],
+      "cost_per_unique_action_type": [
+        {
+          "action_type": "link_click",
+          "value": "0.177886"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "0.177886"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "0.177886"
+        }
+      ],
+      "unique_actions": [
+        {
+          "action_type": "link_click",
+          "value": "123"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "123"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "123"
+        }
+      ],
+      "website_ctr": [
+        {
+          "action_type": "link_click",
+          "value": "0.547536"
+        }
+      ],
+      "age": "25-34",
+      "gender": "female"
+    },
+    {
+      "account_id": "10155225473138747",
+      "account_name": "Yellowfin",
+      "ad_id": "23842502141030443",
+      "ad_name": "Default name - Website Clicks",
+      "adset_id": "23842502140850443",
+      "adset_name": "US, AU, GB - 30-55",
+      "campaign_id": "23842501952630443",
+      "campaign_name": "Website Clicks",
+      "app_store_clicks": "0",
+      "canvas_avg_view_percent": "0",
+      "canvas_avg_view_time": "0",
+      "clicks": "180",
+      "cost_per_inline_link_click": "0.179832",
+      "cost_per_inline_post_engagement": "0.179832",
+      "cost_per_total_action": "0.179832",
+      "cost_per_unique_click": "0.193916",
+      "cost_per_unique_inline_link_click": "0.193916",
+      "cpc": "0.178833",
+      "cpm": "0.881001",
+      "cpp": "2.068102",
+      "ctr": "0.492638",
+      "date_start": "2016-08-05",
+      "date_stop": "2016-09-05",
+      "deeplink_clicks": "0",
+      "frequency": "2.347446",
+      "impressions": "36538",
+      "inline_link_click_ctr": "0.489901",
+      "inline_link_clicks": "179",
+      "inline_post_engagement": "179",
+      "objective": "LINK_CLICKS",
+      "reach": "15565",
+      "social_clicks": "0",
+      "social_impressions": "0",
+      "social_reach": "0",
+      "spend": "32.19",
+      "total_action_value": "0",
+      "total_actions": "179",
+      "total_unique_actions": "166",
+      "unique_clicks": "166",
+      "unique_ctr": "1.066495",
+      "unique_impressions": "15565",
+      "unique_inline_link_click_ctr": "1.066495",
+      "unique_inline_link_clicks": "166",
+      "unique_link_clicks_ctr": "1.066495",
+      "unique_social_clicks": "0",
+      "unique_social_impressions": "0",
+      "website_clicks": "0",
+      "actions": [
+        {
+          "action_type": "link_click",
+          "value": "179"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "179"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "179"
+        }
+      ],
+      "cost_per_action_type": [
+        {
+          "action_type": "link_click",
+          "value": "0.179832"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "0.179832"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "0.179832"
+        }
+      ],
+      "cost_per_unique_action_type": [
+        {
+          "action_type": "link_click",
+          "value": "0.193916"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "0.195091"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "0.195091"
+        }
+      ],
+      "unique_actions": [
+        {
+          "action_type": "link_click",
+          "value": "166"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "165"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "165"
+        }
+      ],
+      "website_ctr": [
+        {
+          "action_type": "link_click",
+          "value": "0.489901"
+        }
+      ],
+      "age": "25-34",
+      "gender": "male"
+    },
+    {
+      "account_id": "10155225473138747",
+      "account_name": "Yellowfin",
+      "ad_id": "23842502141030443",
+      "ad_name": "Default name - Website Clicks",
+      "adset_id": "23842502140850443",
+      "adset_name": "US, AU, GB - 30-55",
+      "campaign_id": "23842501952630443",
+      "campaign_name": "Website Clicks",
+      "app_store_clicks": "0",
+      "canvas_avg_view_percent": "0",
+      "canvas_avg_view_time": "0",
+      "clicks": "10",
+      "cost_per_inline_link_click": "0.223",
+      "cost_per_inline_post_engagement": "0.223",
+      "cost_per_total_action": "0.223",
+      "cost_per_unique_click": "0.223",
+      "cost_per_unique_inline_link_click": "0.223",
+      "cpc": "0.223",
+      "cpm": "1.007682",
+      "cpp": "1.657993",
+      "ctr": "0.451875",
+      "date_start": "2016-08-05",
+      "date_stop": "2016-09-05",
+      "deeplink_clicks": "0",
+      "frequency": "1.645353",
+      "impressions": "2213",
+      "inline_link_click_ctr": "0.451875",
+      "inline_link_clicks": "10",
+      "inline_post_engagement": "10",
+      "objective": "LINK_CLICKS",
+      "reach": "1345",
+      "social_clicks": "0",
+      "social_impressions": "0",
+      "social_reach": "0",
+      "spend": "2.23",
+      "total_action_value": "0",
+      "total_actions": "10",
+      "total_unique_actions": "10",
+      "unique_clicks": "10",
+      "unique_ctr": "0.743494",
+      "unique_impressions": "1345",
+      "unique_inline_link_click_ctr": "0.743494",
+      "unique_inline_link_clicks": "10",
+      "unique_link_clicks_ctr": "0.743494",
+      "unique_social_clicks": "0",
+      "unique_social_impressions": "0",
+      "website_clicks": "0",
+      "actions": [
+        {
+          "action_type": "link_click",
+          "value": "10"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "10"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "10"
+        }
+      ],
+      "cost_per_action_type": [
+        {
+          "action_type": "link_click",
+          "value": "0.223"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "0.223"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "0.223"
+        }
+      ],
+      "cost_per_unique_action_type": [
+        {
+          "action_type": "link_click",
+          "value": "0.223"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "0.223"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "0.223"
+        }
+      ],
+      "unique_actions": [
+        {
+          "action_type": "link_click",
+          "value": "10"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "10"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "10"
+        }
+      ],
+      "website_ctr": [
+        {
+          "action_type": "link_click",
+          "value": "0.451875"
+        }
+      ],
+      "age": "25-34",
+      "gender": "unknown"
+    },
+    {
+      "account_id": "10155225473138747",
+      "account_name": "Yellowfin",
+      "ad_id": "23842502141030443",
+      "ad_name": "Default name - Website Clicks",
+      "adset_id": "23842502140850443",
+      "adset_name": "US, AU, GB - 30-55",
+      "campaign_id": "23842501952630443",
+      "campaign_name": "Website Clicks",
+      "app_store_clicks": "0",
+      "canvas_avg_view_percent": "0",
+      "canvas_avg_view_time": "0",
+      "clicks": "238",
+      "cost_per_inline_link_click": "0.177386",
+      "cost_per_inline_post_engagement": "0.177386",
+      "cost_per_total_action": "0.177386",
+      "cost_per_unique_click": "0.186681",
+      "cost_per_unique_inline_link_click": "0.183476",
+      "cpc": "0.179622",
+      "cpm": "0.726855",
+      "cpp": "1.664331",
+      "ctr": "0.404659",
+      "date_start": "2016-08-05",
+      "date_stop": "2016-09-05",
+      "deeplink_clicks": "0",
+      "frequency": "2.289769",
+      "impressions": "58815",
+      "inline_link_click_ctr": "0.409759",
+      "inline_link_clicks": "241",
+      "inline_post_engagement": "241",
+      "objective": "LINK_CLICKS",
+      "reach": "25686",
+      "social_clicks": "0",
+      "social_impressions": "0",
+      "social_reach": "0",
+      "spend": "42.75",
+      "total_action_value": "0",
+      "total_actions": "241",
+      "total_unique_actions": "233",
+      "unique_clicks": "229",
+      "unique_ctr": "0.891536",
+      "unique_impressions": "25686",
+      "unique_inline_link_click_ctr": "0.907109",
+      "unique_inline_link_clicks": "233",
+      "unique_link_clicks_ctr": "0.907109",
+      "unique_social_clicks": "0",
+      "unique_social_impressions": "0",
+      "website_clicks": "0",
+      "actions": [
+        {
+          "action_type": "link_click",
+          "value": "241"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "241"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "241"
+        }
+      ],
+      "cost_per_action_type": [
+        {
+          "action_type": "link_click",
+          "value": "0.177386"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "0.177386"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "0.177386"
+        }
+      ],
+      "cost_per_unique_action_type": [
+        {
+          "action_type": "link_click",
+          "value": "0.183476"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "0.184267"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "0.184267"
+        }
+      ],
+      "unique_actions": [
+        {
+          "action_type": "link_click",
+          "value": "233"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "232"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "232"
+        }
+      ],
+      "website_ctr": [
+        {
+          "action_type": "link_click",
+          "value": "0.409759"
+        }
+      ],
+      "age": "35-44",
+      "gender": "female"
+    },
+    {
+      "account_id": "10155225473138747",
+      "account_name": "Yellowfin",
+      "ad_id": "23842502141030443",
+      "ad_name": "Default name - Website Clicks",
+      "adset_id": "23842502140850443",
+      "adset_name": "US, AU, GB - 30-55",
+      "campaign_id": "23842501952630443",
+      "campaign_name": "Website Clicks",
+      "app_store_clicks": "0",
+      "canvas_avg_view_percent": "0",
+      "canvas_avg_view_time": "0",
+      "clicks": "378",
+      "cost_per_inline_link_click": "0.215391",
+      "cost_per_inline_post_engagement": "0.215391",
+      "cost_per_total_action": "0.215391",
+      "cost_per_unique_click": "0.232974",
+      "cost_per_unique_inline_link_click": "0.233655",
+      "cpc": "0.211402",
+      "cpm": "0.848536",
+      "cpp": "2.188655",
+      "ctr": "0.401385",
+      "date_start": "2016-08-05",
+      "date_stop": "2016-09-05",
+      "deeplink_clicks": "0",
+      "frequency": "2.579332",
+      "impressions": "94174",
+      "inline_link_click_ctr": "0.393952",
+      "inline_link_clicks": "371",
+      "inline_post_engagement": "371",
+      "objective": "LINK_CLICKS",
+      "reach": "36511",
+      "social_clicks": "0",
+      "social_impressions": "0",
+      "social_reach": "0",
+      "spend": "79.91",
+      "total_action_value": "0",
+      "total_actions": "371",
+      "total_unique_actions": "342",
+      "unique_clicks": "343",
+      "unique_ctr": "0.939443",
+      "unique_impressions": "36511",
+      "unique_inline_link_click_ctr": "0.936704",
+      "unique_inline_link_clicks": "342",
+      "unique_link_clicks_ctr": "0.936704",
+      "unique_social_clicks": "0",
+      "unique_social_impressions": "0",
+      "website_clicks": "0",
+      "actions": [
+        {
+          "action_type": "link_click",
+          "value": "371"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "371"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "371"
+        }
+      ],
+      "cost_per_action_type": [
+        {
+          "action_type": "link_click",
+          "value": "0.215391"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "0.215391"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "0.215391"
+        }
+      ],
+      "cost_per_unique_action_type": [
+        {
+          "action_type": "link_click",
+          "value": "0.233655"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "0.238537"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "0.238537"
+        }
+      ],
+      "unique_actions": [
+        {
+          "action_type": "link_click",
+          "value": "342"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "335"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "335"
+        }
+      ],
+      "website_ctr": [
+        {
+          "action_type": "link_click",
+          "value": "0.393952"
+        }
+      ],
+      "age": "35-44",
+      "gender": "male"
+    },
+    {
+      "account_id": "10155225473138747",
+      "account_name": "Yellowfin",
+      "ad_id": "23842502141030443",
+      "ad_name": "Default name - Website Clicks",
+      "adset_id": "23842502140850443",
+      "adset_name": "US, AU, GB - 30-55",
+      "campaign_id": "23842501952630443",
+      "campaign_name": "Website Clicks",
+      "app_store_clicks": "0",
+      "canvas_avg_view_percent": "0",
+      "canvas_avg_view_time": "0",
+      "clicks": "16",
+      "cost_per_inline_link_click": "0.22",
+      "cost_per_inline_post_engagement": "0.22",
+      "cost_per_total_action": "0.22",
+      "cost_per_unique_click": "0.20625",
+      "cost_per_unique_inline_link_click": "0.22",
+      "cpc": "0.20625",
+      "cpm": "0.486869",
+      "cpp": "1.171043",
+      "ctr": "0.236058",
+      "date_start": "2016-08-05",
+      "date_stop": "2016-09-05",
+      "deeplink_clicks": "0",
+      "frequency": "2.405252",
+      "impressions": "6778",
+      "inline_link_click_ctr": "0.221304",
+      "inline_link_clicks": "15",
+      "inline_post_engagement": "15",
+      "objective": "LINK_CLICKS",
+      "reach": "2818",
+      "social_clicks": "0",
+      "social_impressions": "0",
+      "social_reach": "0",
+      "spend": "3.3",
+      "total_action_value": "0",
+      "total_actions": "15",
+      "total_unique_actions": "15",
+      "unique_clicks": "16",
+      "unique_ctr": "0.567779",
+      "unique_impressions": "2818",
+      "unique_inline_link_click_ctr": "0.532292",
+      "unique_inline_link_clicks": "15",
+      "unique_link_clicks_ctr": "0.532292",
+      "unique_social_clicks": "0",
+      "unique_social_impressions": "0",
+      "website_clicks": "0",
+      "actions": [
+        {
+          "action_type": "link_click",
+          "value": "15"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "15"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "15"
+        }
+      ],
+      "cost_per_action_type": [
+        {
+          "action_type": "link_click",
+          "value": "0.22"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "0.22"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "0.22"
+        }
+      ],
+      "cost_per_unique_action_type": [
+        {
+          "action_type": "link_click",
+          "value": "0.22"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "0.22"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "0.22"
+        }
+      ],
+      "unique_actions": [
+        {
+          "action_type": "link_click",
+          "value": "15"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "15"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "15"
+        }
+      ],
+      "website_ctr": [
+        {
+          "action_type": "link_click",
+          "value": "0.221304"
+        }
+      ],
+      "age": "35-44",
+      "gender": "unknown"
+    },
+    {
+      "account_id": "10155225473138747",
+      "account_name": "Yellowfin",
+      "ad_id": "23842502141030443",
+      "ad_name": "Default name - Website Clicks",
+      "adset_id": "23842502140850443",
+      "adset_name": "US, AU, GB - 30-55",
+      "campaign_id": "23842501952630443",
+      "campaign_name": "Website Clicks",
+      "app_store_clicks": "0",
+      "canvas_avg_view_percent": "0",
+      "canvas_avg_view_time": "0",
+      "clicks": "318",
+      "cost_per_inline_link_click": "0.227888",
+      "cost_per_inline_post_engagement": "0.227888",
+      "cost_per_total_action": "0.227888",
+      "cost_per_unique_click": "0.24059",
+      "cost_per_unique_inline_link_click": "0.23671",
+      "cpc": "0.230755",
+      "cpm": "0.657126",
+      "cpp": "1.513333",
+      "ctr": "0.284773",
+      "date_start": "2016-08-05",
+      "date_stop": "2016-09-05",
+      "deeplink_clicks": "0",
+      "frequency": "2.302955",
+      "impressions": "111668",
+      "inline_link_click_ctr": "0.288355",
+      "inline_link_clicks": "322",
+      "inline_post_engagement": "322",
+      "objective": "LINK_CLICKS",
+      "reach": "48489",
+      "social_clicks": "0",
+      "social_impressions": "0",
+      "social_reach": "0",
+      "spend": "73.38",
+      "total_action_value": "0",
+      "total_actions": "322",
+      "total_unique_actions": "310",
+      "unique_clicks": "305",
+      "unique_ctr": "0.629009",
+      "unique_impressions": "48489",
+      "unique_inline_link_click_ctr": "0.63932",
+      "unique_inline_link_clicks": "310",
+      "unique_link_clicks_ctr": "0.63932",
+      "unique_social_clicks": "0",
+      "unique_social_impressions": "0",
+      "website_clicks": "0",
+      "actions": [
+        {
+          "action_type": "link_click",
+          "value": "322"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "322"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "322"
+        }
+      ],
+      "cost_per_action_type": [
+        {
+          "action_type": "link_click",
+          "value": "0.227888"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "0.227888"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "0.227888"
+        }
+      ],
+      "cost_per_unique_action_type": [
+        {
+          "action_type": "link_click",
+          "value": "0.23671"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "0.23671"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "0.23671"
+        }
+      ],
+      "unique_actions": [
+        {
+          "action_type": "link_click",
+          "value": "310"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "310"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "310"
+        }
+      ],
+      "website_ctr": [
+        {
+          "action_type": "link_click",
+          "value": "0.288355"
+        }
+      ],
+      "age": "45-54",
+      "gender": "female"
+    },
+    {
+      "account_id": "10155225473138747",
+      "account_name": "Yellowfin",
+      "ad_id": "23842502141030443",
+      "ad_name": "Default name - Website Clicks",
+      "adset_id": "23842502140850443",
+      "adset_name": "US, AU, GB - 30-55",
+      "campaign_id": "23842501952630443",
+      "campaign_name": "Website Clicks",
+      "app_store_clicks": "0",
+      "canvas_avg_view_percent": "0",
+      "canvas_avg_view_time": "0",
+      "clicks": "469",
+      "cost_per_inline_link_click": "0.267063",
+      "cost_per_inline_post_engagement": "0.267063",
+      "cost_per_total_action": "0.267063",
+      "cost_per_unique_click": "0.283601",
+      "cost_per_unique_inline_link_click": "0.282952",
+      "cpc": "0.263646",
+      "cpm": "0.710359",
+      "cpp": "2.27373",
+      "ctr": "0.269436",
+      "date_start": "2016-08-05",
+      "date_stop": "2016-09-05",
+      "deeplink_clicks": "0",
+      "frequency": "3.20082",
+      "impressions": "174067",
+      "inline_link_click_ctr": "0.26599",
+      "inline_link_clicks": "463",
+      "inline_post_engagement": "463",
+      "objective": "LINK_CLICKS",
+      "reach": "54382",
+      "social_clicks": "0",
+      "social_impressions": "0",
+      "social_reach": "0",
+      "spend": "123.65",
+      "total_action_value": "0",
+      "total_actions": "463",
+      "total_unique_actions": "437",
+      "unique_clicks": "436",
+      "unique_ctr": "0.801736",
+      "unique_impressions": "54382",
+      "unique_inline_link_click_ctr": "0.803575",
+      "unique_inline_link_clicks": "437",
+      "unique_link_clicks_ctr": "0.803575",
+      "unique_social_clicks": "0",
+      "unique_social_impressions": "0",
+      "website_clicks": "0",
+      "actions": [
+        {
+          "action_type": "link_click",
+          "value": "463"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "463"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "463"
+        }
+      ],
+      "cost_per_action_type": [
+        {
+          "action_type": "link_click",
+          "value": "0.267063"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "0.267063"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "0.267063"
+        }
+      ],
+      "cost_per_unique_action_type": [
+        {
+          "action_type": "link_click",
+          "value": "0.282952"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "0.282952"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "0.282952"
+        }
+      ],
+      "unique_actions": [
+        {
+          "action_type": "link_click",
+          "value": "437"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "437"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "437"
+        }
+      ],
+      "website_ctr": [
+        {
+          "action_type": "link_click",
+          "value": "0.26599"
+        }
+      ],
+      "age": "45-54",
+      "gender": "male"
+    },
+    {
+      "account_id": "10155225473138747",
+      "account_name": "Yellowfin",
+      "ad_id": "23842502141030443",
+      "ad_name": "Default name - Website Clicks",
+      "adset_id": "23842502140850443",
+      "adset_name": "US, AU, GB - 30-55",
+      "campaign_id": "23842501952630443",
+      "campaign_name": "Website Clicks",
+      "app_store_clicks": "0",
+      "canvas_avg_view_percent": "0",
+      "canvas_avg_view_time": "0",
+      "clicks": "19",
+      "cost_per_inline_link_click": "0.149474",
+      "cost_per_inline_post_engagement": "0.149474",
+      "cost_per_total_action": "0.149474",
+      "cost_per_unique_click": "0.167059",
+      "cost_per_unique_inline_link_click": "0.167059",
+      "cpc": "0.149474",
+      "cpm": "0.262939",
+      "cpp": "0.599156",
+      "ctr": "0.17591",
+      "date_start": "2016-08-05",
+      "date_stop": "2016-09-05",
+      "deeplink_clicks": "0",
+      "frequency": "2.278692",
+      "impressions": "10801",
+      "inline_link_click_ctr": "0.17591",
+      "inline_link_clicks": "19",
+      "inline_post_engagement": "19",
+      "objective": "LINK_CLICKS",
+      "reach": "4740",
+      "social_clicks": "0",
+      "social_impressions": "0",
+      "social_reach": "0",
+      "spend": "2.84",
+      "total_action_value": "0",
+      "total_actions": "19",
+      "total_unique_actions": "17",
+      "unique_clicks": "17",
+      "unique_ctr": "0.35865",
+      "unique_impressions": "4740",
+      "unique_inline_link_click_ctr": "0.35865",
+      "unique_inline_link_clicks": "17",
+      "unique_link_clicks_ctr": "0.35865",
+      "unique_social_clicks": "0",
+      "unique_social_impressions": "0",
+      "website_clicks": "0",
+      "actions": [
+        {
+          "action_type": "link_click",
+          "value": "19"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "19"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "19"
+        }
+      ],
+      "cost_per_action_type": [
+        {
+          "action_type": "link_click",
+          "value": "0.149474"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "0.149474"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "0.149474"
+        }
+      ],
+      "cost_per_unique_action_type": [
+        {
+          "action_type": "link_click",
+          "value": "0.167059"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "0.167059"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "0.167059"
+        }
+      ],
+      "unique_actions": [
+        {
+          "action_type": "link_click",
+          "value": "17"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "17"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "17"
+        }
+      ],
+      "website_ctr": [
+        {
+          "action_type": "link_click",
+          "value": "0.17591"
+        }
+      ],
+      "age": "45-54",
+      "gender": "unknown"
+    },
+    {
+      "account_id": "10155225473138747",
+      "account_name": "Yellowfin",
+      "ad_id": "23842502141030443",
+      "ad_name": "Default name - Website Clicks",
+      "adset_id": "23842502140850443",
+      "adset_name": "US, AU, GB - 30-55",
+      "campaign_id": "23842501952630443",
+      "campaign_name": "Website Clicks",
+      "app_store_clicks": "0",
+      "canvas_avg_view_percent": "0",
+      "canvas_avg_view_time": "0",
+      "clicks": "39",
+      "cost_per_inline_link_click": "0.222895",
+      "cost_per_inline_post_engagement": "0.222895",
+      "cost_per_total_action": "0.222895",
+      "cost_per_unique_click": "0.228919",
+      "cost_per_unique_inline_link_click": "0.228919",
+      "cpc": "0.217179",
+      "cpm": "0.622245",
+      "cpp": "1.406743",
+      "ctr": "0.286512",
+      "date_start": "2016-08-05",
+      "date_stop": "2016-09-05",
+      "deeplink_clicks": "0",
+      "frequency": "2.260754",
+      "impressions": "13612",
+      "inline_link_click_ctr": "0.279165",
+      "inline_link_clicks": "38",
+      "inline_post_engagement": "38",
+      "objective": "LINK_CLICKS",
+      "reach": "6021",
+      "social_clicks": "0",
+      "social_impressions": "0",
+      "social_reach": "0",
+      "spend": "8.47",
+      "total_action_value": "0",
+      "total_actions": "38",
+      "total_unique_actions": "37",
+      "unique_clicks": "37",
+      "unique_ctr": "0.614516",
+      "unique_impressions": "6021",
+      "unique_inline_link_click_ctr": "0.614516",
+      "unique_inline_link_clicks": "37",
+      "unique_link_clicks_ctr": "0.614516",
+      "unique_social_clicks": "0",
+      "unique_social_impressions": "0",
+      "website_clicks": "0",
+      "actions": [
+        {
+          "action_type": "link_click",
+          "value": "38"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "38"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "38"
+        }
+      ],
+      "cost_per_action_type": [
+        {
+          "action_type": "link_click",
+          "value": "0.222895"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "0.222895"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "0.222895"
+        }
+      ],
+      "cost_per_unique_action_type": [
+        {
+          "action_type": "link_click",
+          "value": "0.228919"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "0.228919"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "0.228919"
+        }
+      ],
+      "unique_actions": [
+        {
+          "action_type": "link_click",
+          "value": "37"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "37"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "37"
+        }
+      ],
+      "website_ctr": [
+        {
+          "action_type": "link_click",
+          "value": "0.279165"
+        }
+      ],
+      "age": "55-64",
+      "gender": "female"
+    },
+    {
+      "account_id": "10155225473138747",
+      "account_name": "Yellowfin",
+      "ad_id": "23842502141030443",
+      "ad_name": "Default name - Website Clicks",
+      "adset_id": "23842502140850443",
+      "adset_name": "US, AU, GB - 30-55",
+      "campaign_id": "23842501952630443",
+      "campaign_name": "Website Clicks",
+      "app_store_clicks": "0",
+      "canvas_avg_view_percent": "0",
+      "canvas_avg_view_time": "0",
+      "clicks": "38",
+      "cost_per_inline_link_click": "0.261795",
+      "cost_per_inline_post_engagement": "0.261795",
+      "cost_per_total_action": "0.261795",
+      "cost_per_unique_click": "0.283611",
+      "cost_per_unique_inline_link_click": "0.268684",
+      "cpc": "0.268684",
+      "cpm": "0.53751",
+      "cpp": "1.832047",
+      "ctr": "0.200053",
+      "date_start": "2016-08-05",
+      "date_stop": "2016-09-05",
+      "deeplink_clicks": "0",
+      "frequency": "3.408398",
+      "impressions": "18995",
+      "inline_link_click_ctr": "0.205317",
+      "inline_link_clicks": "39",
+      "inline_post_engagement": "39",
+      "objective": "LINK_CLICKS",
+      "reach": "5573",
+      "social_clicks": "0",
+      "social_impressions": "0",
+      "social_reach": "0",
+      "spend": "10.21",
+      "total_action_value": "0",
+      "total_actions": "39",
+      "total_unique_actions": "38",
+      "unique_clicks": "36",
+      "unique_ctr": "0.645972",
+      "unique_impressions": "5573",
+      "unique_inline_link_click_ctr": "0.681859",
+      "unique_inline_link_clicks": "38",
+      "unique_link_clicks_ctr": "0.681859",
+      "unique_social_clicks": "0",
+      "unique_social_impressions": "0",
+      "website_clicks": "0",
+      "actions": [
+        {
+          "action_type": "link_click",
+          "value": "39"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "39"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "39"
+        }
+      ],
+      "cost_per_action_type": [
+        {
+          "action_type": "link_click",
+          "value": "0.261795"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "0.261795"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "0.261795"
+        }
+      ],
+      "cost_per_unique_action_type": [
+        {
+          "action_type": "link_click",
+          "value": "0.268684"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "0.268684"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "0.268684"
+        }
+      ],
+      "unique_actions": [
+        {
+          "action_type": "link_click",
+          "value": "38"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "38"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "38"
+        }
+      ],
+      "website_ctr": [
+        {
+          "action_type": "link_click",
+          "value": "0.205317"
+        }
+      ],
+      "age": "55-64",
+      "gender": "male"
+    },
+    {
+      "account_id": "10155225473138747",
+      "account_name": "Yellowfin",
+      "ad_id": "23842502141030443",
+      "ad_name": "Default name - Website Clicks",
+      "adset_id": "23842502140850443",
+      "adset_name": "US, AU, GB - 30-55",
+      "campaign_id": "23842501952630443",
+      "campaign_name": "Website Clicks",
+      "app_store_clicks": "0",
+      "canvas_avg_view_percent": "0",
+      "canvas_avg_view_time": "0",
+      "clicks": "2",
+      "cost_per_inline_link_click": "0.14",
+      "cost_per_inline_post_engagement": "0.14",
+      "cost_per_total_action": "0.14",
+      "cost_per_unique_click": "0.14",
+      "cost_per_unique_inline_link_click": "0.14",
+      "cpc": "0.14",
+      "cpm": "0.263653",
+      "cpp": "1.458333",
+      "ctr": "0.188324",
+      "date_start": "2016-08-05",
+      "date_stop": "2016-09-05",
+      "deeplink_clicks": "0",
+      "frequency": "5.53125",
+      "impressions": "1062",
+      "inline_link_click_ctr": "0.188324",
+      "inline_link_clicks": "2",
+      "inline_post_engagement": "2",
+      "objective": "LINK_CLICKS",
+      "reach": "192",
+      "social_clicks": "0",
+      "social_impressions": "0",
+      "social_reach": "0",
+      "spend": "0.28",
+      "total_action_value": "0",
+      "total_actions": "2",
+      "total_unique_actions": "2",
+      "unique_clicks": "2",
+      "unique_ctr": "1.041667",
+      "unique_impressions": "192",
+      "unique_inline_link_click_ctr": "1.041667",
+      "unique_inline_link_clicks": "2",
+      "unique_link_clicks_ctr": "1.041667",
+      "unique_social_clicks": "0",
+      "unique_social_impressions": "0",
+      "website_clicks": "0",
+      "actions": [
+        {
+          "action_type": "link_click",
+          "value": "2"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "2"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "2"
+        }
+      ],
+      "cost_per_action_type": [
+        {
+          "action_type": "link_click",
+          "value": "0.14"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "0.14"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "0.14"
+        }
+      ],
+      "cost_per_unique_action_type": [
+        {
+          "action_type": "link_click",
+          "value": "0.14"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "0.14"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "0.14"
+        }
+      ],
+      "unique_actions": [
+        {
+          "action_type": "link_click",
+          "value": "2"
+        },
+        {
+          "action_type": "page_engagement",
+          "value": "2"
+        },
+        {
+          "action_type": "post_engagement",
+          "value": "2"
+        }
+      ],
+      "website_ctr": [
+        {
+          "action_type": "link_click",
+          "value": "0.188324"
+        }
+      ],
+      "age": "55-64",
+      "gender": "unknown"
+    },
+    {
+      "account_id": "10155225473138747",
+      "account_name": "Yellowfin",
+      "ad_id": "23842502141030443",
+      "ad_name": "Default name - Website Clicks",
+      "adset_id": "23842502140850443",
+      "adset_name": "US, AU, GB - 30-55",
+      "campaign_id": "23842501952630443",
+      "campaign_name": "Website Clicks",
+      "app_store_clicks": "0",
+      "canvas_avg_view_percent": "0",
+      "canvas_avg_view_time": "0",
+      "clicks": "0",
+      "cost_per_inline_link_click": "0",
+      "cost_per_inline_post_engagement": "0",
+      "cost_per_total_action": "0",
+      "cost_per_unique_click": "0",
+      "cost_per_unique_inline_link_click": "0",
+      "cpc": "0",
+      "cpm": "0",
+      "cpp": "0",
+      "ctr": "0",
+      "date_start": "2016-08-05",
+      "date_stop": "2016-09-05",
+      "deeplink_clicks": "0",
+      "frequency": "0",
+      "impressions": "13",
+      "inline_link_click_ctr": "0",
+      "inline_link_clicks": "0",
+      "inline_post_engagement": "0",
+      "objective": "LINK_CLICKS",
+      "reach": "0",
+      "social_clicks": "0",
+      "social_impressions": "0",
+      "social_reach": "0",
+      "spend": "0",
+      "total_action_value": "0",
+      "total_actions": "0",
+      "total_unique_actions": "0",
+      "unique_clicks": "0",
+      "unique_ctr": "0",
+      "unique_impressions": "0",
+      "unique_inline_link_click_ctr": "0",
+      "unique_inline_link_clicks": "0",
+      "unique_link_clicks_ctr": "0",
+      "unique_social_clicks": "0",
+      "unique_social_impressions": "0",
+      "website_clicks": "0",
+      "age": "65+",
+      "gender": "female"
+    },
+    {
+      "account_id": "10155225473138747",
+      "account_name": "Yellowfin",
+      "ad_id": "23842502141030443",
+      "ad_name": "Default name - Website Clicks",
+      "adset_id": "23842502140850443",
+      "adset_name": "US, AU, GB - 30-55",
+      "campaign_id": "23842501952630443",
+      "campaign_name": "Website Clicks",
+      "app_store_clicks": "0",
+      "canvas_avg_view_percent": "0",
+      "canvas_avg_view_time": "0",
+      "clicks": "0",
+      "cost_per_inline_link_click": "0",
+      "cost_per_inline_post_engagement": "0",
+      "cost_per_total_action": "0",
+      "cost_per_unique_click": "0",
+      "cost_per_unique_inline_link_click": "0",
+      "cpc": "0",
+      "cpm": "0",
+      "cpp": "0",
+      "ctr": "0",
+      "date_start": "2016-08-05",
+      "date_stop": "2016-09-05",
+      "deeplink_clicks": "0",
+      "frequency": "0",
+      "impressions": "15",
+      "inline_link_click_ctr": "0",
+      "inline_link_clicks": "0",
+      "inline_post_engagement": "0",
+      "objective": "LINK_CLICKS",
+      "reach": "0",
+      "social_clicks": "0",
+      "social_impressions": "0",
+      "social_reach": "0",
+      "spend": "0",
+      "total_action_value": "0",
+      "total_actions": "0",
+      "total_unique_actions": "0",
+      "unique_clicks": "0",
+      "unique_ctr": "0",
+      "unique_impressions": "0",
+      "unique_inline_link_click_ctr": "0",
+      "unique_inline_link_clicks": "0",
+      "unique_link_clicks_ctr": "0",
+      "unique_social_clicks": "0",
+      "unique_social_impressions": "0",
+      "website_clicks": "0",
+      "age": "65+",
+      "gender": "male"
+    },
+    {
+      "account_id": "10155225473138747",
+      "account_name": "Yellowfin",
+      "ad_id": "23842502141030443",
+      "ad_name": "Default name - Website Clicks",
+      "adset_id": "23842502140850443",
+      "adset_name": "US, AU, GB - 30-55",
+      "campaign_id": "23842501952630443",
+      "campaign_name": "Website Clicks",
+      "app_store_clicks": "0",
+      "canvas_avg_view_percent": "0",
+      "canvas_avg_view_time": "0",
+      "clicks": "0",
+      "cost_per_inline_link_click": "0",
+      "cost_per_inline_post_engagement": "0",
+      "cost_per_total_action": "0",
+      "cost_per_unique_click": "0",
+      "cost_per_unique_inline_link_click": "0",
+      "cpc": "0",
+      "cpm": "0",
+      "cpp": "0",
+      "ctr": "0",
+      "date_start": "2016-08-05",
+      "date_stop": "2016-09-05",
+      "deeplink_clicks": "0",
+      "frequency": "0",
+      "impressions": "1",
+      "inline_link_click_ctr": "0",
+      "inline_link_clicks": "0",
+      "inline_post_engagement": "0",
+      "objective": "LINK_CLICKS",
+      "reach": "0",
+      "social_clicks": "0",
+      "social_impressions": "0",
+      "social_reach": "0",
+      "spend": "0",
+      "total_action_value": "0",
+      "total_actions": "0",
+      "total_unique_actions": "0",
+      "unique_clicks": "0",
+      "unique_ctr": "0",
+      "unique_impressions": "0",
+      "unique_inline_link_click_ctr": "0",
+      "unique_inline_link_clicks": "0",
+      "unique_link_clicks_ctr": "0",
+      "unique_social_clicks": "0",
+      "unique_social_impressions": "0",
+      "website_clicks": "0",
+      "age": "65+",
+      "gender": "unknown"
+    }
+  ],
+  "paging": {
+    "cursors": {
+      "before": "MAZDZD",
+      "after": "MTkZD"
+    }
+  }
+}
