@@ -1,18 +1,53 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.dev</groupId>
-  <version>1.0.0</version>
+  <groupId>com.github.opendevl</groupId>
+  <artifactId>json2flat</artifactId>
+  <version>1.0</version>
+  <packaging>jar</packaging>
+  
   <name>Json to csv conversion</name>
+  <description>Converting JSON documents to flat CSV</description>
+  <url>https://github.com/opendevl/Json2Flat</url>
+  
+  <distributionManagement>
+  	<snapshotRepository>
+  		<id>ossrh</id>
+  		<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+  	</snapshotRepository>
+  	<repository>
+  		<id>ossrh</id>
+  		<url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+  	</repository>
+  </distributionManagement>
+  
+  <licenses>
+  	<license>
+  		<name>Creative Commons</name>
+  	</license>
+  </licenses>
+  
+  <developers>
+  	<developer>
+  		<id>skap</id>
+  		<name>skap</name>
+  	</developer>
+  	<developer>
+  		<id>curious95</id>
+  		<name>curious95</name>
+  	</developer>
+  </developers>
+  
+  
   <build>
     <sourceDirectory>src</sourceDirectory>
-    <!-- <resources>
+    <resources>
     	<resource>
     		<directory>src/main/resources</directory>
     		<excludes>
     			<exclude>*.json</exclude>
     		</excludes>
     	</resource>
-    </resources> -->
+    </resources>
     <pluginManagement>
 	    <plugins>
 	    	<plugin>
@@ -55,5 +90,5 @@
 	    <version>2.2.0</version>
 	</dependency>  	  
   </dependencies>
-  <artifactId>json2flat</artifactId>
+  
 </project>

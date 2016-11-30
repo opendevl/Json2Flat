@@ -15,9 +15,10 @@ public class TestSheet {
 		String str = new String(Files.readAllBytes(Paths.get("/home/aptus/workspace/mvgitproj/Json2Flat/json2flat/src/main/resources/test.json")));
 		JFlat flatMe = new JFlat(str);
 		
-		List<Object[]> json2csv = flatMe.jsonToSheet(); 
+		List<Object[]> json2csv = flatMe.json2Sheet().getJsonAsSheet();
 		
-		PrintWriter writer = new PrintWriter("/home/aptus/Desktop/json2csv.csv", "UTF-8");
+		flatMe.write2csv("/home/aptus/Desktop/json2csv.csv");
+		/*PrintWriter writer = new PrintWriter("/home/aptus/Desktop/json2csv.csv", "UTF-8");
 		boolean comma = false;
 		for(Object[] o : json2csv){
 			comma = false;
@@ -33,7 +34,7 @@ public class TestSheet {
 			}
 			writer.println();
 		}
-		writer.close();
+		writer.close();*/
 	}
 
 }

@@ -1,5 +1,8 @@
 package com.dev.json2flat;
 
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
@@ -19,7 +22,7 @@ public class JFlat {
 	
 	String jsonString = null;
 	
-	List<Object[]> matrix = null;
+	List<Object[]> sheetMatrix = null;
 	
 	List<String> pathList = null;
 	
@@ -43,19 +46,18 @@ public class JFlat {
 	public JFlat(String jsonString){
 		this.jsonString = jsonString;
 		
-		conf = Configuration.defaultConfiguration()
+		this.conf = Configuration.defaultConfiguration()
 				.addOptions(Option.DEFAULT_PATH_LEAF_TO_NULL)
 				.addOptions(Option.SUPPRESS_EXCEPTIONS);
 		
-		pathConf = Configuration.defaultConfiguration()
+		this.pathConf = Configuration.defaultConfiguration()
 				.addOptions(Option.AS_PATH_LIST)
 				.addOptions(Option.ALWAYS_RETURN_LIST);
-		
 	}
 	
-	public List<Object[]> jsonToSheet(){
+	public JFlat json2Sheet(){
 		
-		matrix = new ArrayList<Object[]>();
+		sheetMatrix = new ArrayList<Object[]>();
 		
 		ele = new JsonParser().parse(this.jsonString);
 		
@@ -107,12 +109,12 @@ public class JFlat {
 			header[i] = o;
 			i++;
 		}
-		matrix.add(header);
+		sheetMatrix.add(header);
 		
-		matrix.add(make2D(new Object[unique.size()], new Object[unique.size()], ele, "/"));
+		sheetMatrix.add(make2D(new Object[unique.size()], new Object[unique.size()], ele, "/"));
 		
-		Object last[] = matrix.get(matrix.size()-1);
-		Object secondLast[] = matrix.get(matrix.size()-2);
+		Object last[] = sheetMatrix.get(sheetMatrix.size()-1);
+		Object secondLast[] = sheetMatrix.get(sheetMatrix.size()-2);
 		
 		boolean delete = true;
 		
@@ -134,9 +136,9 @@ public class JFlat {
 		}
 		
 		if(delete)
-			matrix.remove(matrix.size()-1);
+			sheetMatrix.remove(sheetMatrix.size()-1);
 		
-		return matrix;
+		return this;
 	}
 	
 	public Object[] make2D(Object[] cur, Object[] old, JsonElement ele, String path){
@@ -192,9 +194,9 @@ public class JFlat {
 				else{					
 					if(tmp.isJsonObject()){
 						gotArray = isInnerArray(tmp);
-						matrix.add(make2D(new Object[unique.size()], cur, tmp.getAsJsonObject(), path + arrIndex + "/"));
+						sheetMatrix.add(make2D(new Object[unique.size()], cur, tmp.getAsJsonObject(), path + arrIndex + "/"));
 						if(gotArray){
-							matrix.remove(matrix.size()-1);
+							sheetMatrix.remove(sheetMatrix.size()-1);
 						}
 					}else if(tmp.isJsonArray()){
 						make2D(new Object[unique.size()], cur, tmp.getAsJsonArray(), path + arrIndex + "//");
@@ -224,5 +226,35 @@ public class JFlat {
 		}
 		return false;
 	}
+	
+	public List<Object[]> getJsonAsSheet(){
+		return this.sheetMatrix;
+	}
+	
+	public void write2csv(String destination) throws FileNotFoundException, UnsupportedEncodingException{
+		this.write2csv(destination, ',');
+	}
+	
+	public void write2csv(String destination, char delimiter) throws FileNotFoundException, UnsupportedEncodingException{
+		PrintWriter writer = new PrintWriter(destination, "UTF-8");
+		boolean comma = false;
+		for(Object[] o : this.sheetMatrix){
+			comma = false;
+			for(Object t : o){
+				if(t==null){
+					writer.print(comma == true ? delimiter : "");
+				}
+				else{
+					writer.print(comma == true ? delimiter+t.toString() : t.toString());
+				}
+				if(comma == false)
+					comma = true;
+			}
+			writer.println();
+		}
+		writer.close();
+	}
+	
+	
 	
 }
