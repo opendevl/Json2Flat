@@ -4,7 +4,7 @@ Converting JSON to flat CSV. No POJO's required.
 Example
 ----------
 ```java
-String str = new String(Files.readAllBytes(Paths.get("/home/workspace/mvgitproj/Json2Flat/json2flat/src/main/resources/test.json")));
+String str = new String(Files.readAllBytes(Paths.get("/path/to/source/file.json")));
 
 JFlat flatMe = new JFlat(str);
 
@@ -12,19 +12,19 @@ JFlat flatMe = new JFlat(str);
 List<Object[]> json2csv = flatMe.json2Sheet().getJsonAsSheet();
 
 //write the 2D representation in csv format
-flatMe.write2csv("/home/Desktop/json2csv.csv");
+flatMe.write2csv("/path/to/destination/file.json");
 ```
 OR
 ```java
-String str = new String(Files.readAllBytes(Paths.get("/home/workspace/mvgitproj/Json2Flat/json2flat/src/main/resources/test.json")));
+String str = new String(Files.readAllBytes(Paths.get("/path/to/source/file.json")));
 
 JFlat flatMe = new JFlat(str);
 
 //directly write the JSON document to CSV
-flatMe.json2Sheet().write2csv("/home/Desktop/json2csv.csv");
+flatMe.json2Sheet().write2csv("/path/to/destination/file.json");
 
 //directly write the JSON document to CSV but with delimiter
-flatMe.json2Sheet().write2csv("/home/Desktop/json2csv.csv", '|');
+flatMe.json2Sheet().write2csv("/path/to/destination/file.json", '|');
 ```
 Input JSON
 ----------
