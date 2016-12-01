@@ -20,11 +20,22 @@
   	</repository>
   </distributionManagement>
   
+  <issueManagement>
+  	<url>https://github.com/opendevl/Json2Flat/issues</url>
+  	<system>GitHub Issues</system>
+  </issueManagement>	
+  
   <licenses>
   	<license>
   		<name>Creative Commons</name>
   	</license>
   </licenses>
+  
+  <scm>
+		<url>https://github.com/opendevl/Json2Flat</url>
+		<connection>scm:git:git://github.com/opendevl/Json2Flat.git</connection>
+		<developerConnection>scm:git:git@github.com:opendevl/Json2Flat.git</developerConnection>
+	</scm>
   
   <developers>
   	<developer>
@@ -39,7 +50,7 @@
   
   
   <build>
-    <sourceDirectory>src</sourceDirectory>
+    <!-- <sourceDirectory>src</sourceDirectory>
     <resources>
     	<resource>
     		<directory>src/main/resources</directory>
@@ -47,20 +58,43 @@
     			<exclude>*.json</exclude>
     		</excludes>
     	</resource>
-    </resources>
+    </resources> -->
+    
     <pluginManagement>
 	    <plugins>
+	    	<!-- <plugin>
+		        <groupId>org.apache.maven.plugins</groupId>
+		        <artifactId>maven-jar-plugin</artifactId>
+		        <version>3.0.2</version>
+		        <configuration>
+		          <includes>
+		            <include>**/com.github/*</include>
+		          </includes>
+		          <excludes>
+		          	<exclude>**/test/*</exclude>
+		          </excludes>
+		        </configuration>
+		      </plugin> -->
 	    	<plugin>
+		        <groupId>org.apache.maven.plugins</groupId>
+		        <artifactId>maven-javadoc-plugin</artifactId>
+		        <version>2.10.4</version>
+		        <configuration>
+		          <sourcepath>${project.basedir}/src/main/java</sourcepath>
+		          <excludePackageNames>test.JSheet.*</excludePackageNames>
+		        </configuration>
+		      </plugin>
+	    	<!-- <plugin>
 			    <groupId>org.apache.maven.plugins</groupId>
 			    <artifactId>maven-dependency-plugin</artifactId>
 			    <configuration>
-			    	<excludePackageNames>com.dev.json2flat.*</excludePackageNames>
+			    	<excludePackageNames>com.github.opendevl.*</excludePackageNames>
 			        <outputDirectory>
 			            ${project.build.directory}
 			        </outputDirectory>
 			    </configuration>
-			</plugin>
-	      	<plugin>
+			</plugin> -->
+	      	<!-- <plugin>
 	        <artifactId>maven-assembly-plugin</artifactId>
 		      <configuration>
 		        <archive>
@@ -72,10 +106,11 @@
 		          <descriptorRef>jar-with-dependencies</descriptorRef>
 		        </descriptorRefs>
 		      </configuration>
-	      </plugin>
+	      </plugin> -->
 	    </plugins>
     </pluginManagement>
   </build>
+  
   <dependencies>
   	<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
 	<dependency>

@@ -23,6 +23,10 @@ import com.jayway.jsonpath.DocumentContext;
 import com.jayway.jsonpath.JsonPath;
 import com.jayway.jsonpath.Option;
 
+/**
+ * @author aptus
+ * parsing.java
+ */
 public class Parsing {
 	
 	static List<Object[]> arr = new ArrayList<Object[]>();
@@ -34,7 +38,12 @@ public class Parsing {
 	static List<String> unique = null;
 	
 	static String tmpPath = null;
-	
+	/**
+	 * just for testing
+	 * @param args
+	 * @throws UnsupportedEncodingException
+	 * @throws FileNotFoundException
+	 */
 	public static void main(String[] args) throws UnsupportedEncodingException, FileNotFoundException{
 		InputStream is = Parsing.class.getResourceAsStream("/test.json") ;  
 		Reader reader = new BufferedReader(new InputStreamReader(is, "UTF-8"));

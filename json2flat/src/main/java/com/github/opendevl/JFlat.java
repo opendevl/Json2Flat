@@ -1,4 +1,4 @@
-package com.dev.json2flat;
+package com.github.opendevl;
 
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
@@ -18,6 +18,12 @@ import com.jayway.jsonpath.DocumentContext;
 import com.jayway.jsonpath.JsonPath;
 import com.jayway.jsonpath.Option;
 
+/**
+ * This class describes some methods which converts a Json document in a 2D matrix.
+ * @author skap
+ * @version 1.0
+ *
+ */
 public class JFlat {
 	
 	String jsonString = null;
@@ -55,6 +61,10 @@ public class JFlat {
 				.addOptions(Option.ALWAYS_RETURN_LIST);
 	}
 	
+	/**
+	 * This method 
+	 * @return
+	 */
 	public JFlat json2Sheet(){
 		
 		sheetMatrix = new ArrayList<Object[]>();
@@ -227,14 +237,31 @@ public class JFlat {
 		return false;
 	}
 	
+	/**
+	 * 
+	 * @return
+	 */
 	public List<Object[]> getJsonAsSheet(){
 		return this.sheetMatrix;
 	}
 	
+	/**
+	 * 
+	 * @param destination
+	 * @throws FileNotFoundException
+	 * @throws UnsupportedEncodingException
+	 */
 	public void write2csv(String destination) throws FileNotFoundException, UnsupportedEncodingException{
 		this.write2csv(destination, ',');
 	}
 	
+	/**
+	 * 
+	 * @param destination
+	 * @param delimiter
+	 * @throws FileNotFoundException
+	 * @throws UnsupportedEncodingException
+	 */
 	public void write2csv(String destination, char delimiter) throws FileNotFoundException, UnsupportedEncodingException{
 		PrintWriter writer = new PrintWriter(destination, "UTF-8");
 		boolean comma = false;
@@ -254,7 +281,4 @@ public class JFlat {
 		}
 		writer.close();
 	}
-	
-	
-	
 }
