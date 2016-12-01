@@ -4,9 +4,9 @@ This is just a beta version.
 But still if you want to use here goes the dependency for Maven. 
 ```xml
 <dependency>
-    <groupId>com.jayway.jsonpath</groupId>
-    <artifactId>json-path</artifactId>
-    <version>2.2.0</version>
+    <groupId>com.github.opendevl</groupId>
+    <artifactId>json2flat</artifactId>
+    <version>1.0</version>
 </dependency>
 ```
 
