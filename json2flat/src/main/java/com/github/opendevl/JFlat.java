@@ -1,5 +1,6 @@
 package com.github.opendevl;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
@@ -19,37 +20,41 @@ import com.jayway.jsonpath.JsonPath;
 import com.jayway.jsonpath.Option;
 
 /**
- * This class describes some methods which converts a Json document in a 2D matrix.
- * @author skap
+ * This class converts a Json document in a 2D matrix format like CSV.
+ * @author opendevl
  * @version 1.0
- *
  */
 public class JFlat {
 	
-	String jsonString = null;
+	private String jsonString = null;
 	
-	List<Object[]> sheetMatrix = null;
+	private List<Object[]> sheetMatrix = null;
 	
-	List<String> pathList = null;
+	private List<String> pathList = null;
 	
-	Configuration conf = null;
-	Configuration pathConf = null;
+	private Configuration conf = null;
+	private Configuration pathConf = null;
 	
-	DocumentContext parse = null;
-	DocumentContext parsePath = null;
+	private DocumentContext parse = null;
+	private DocumentContext parsePath = null;
 	
-	HashSet<String> primitivePath = null;
-	HashSet<String> primitiveUniquePath = null;
-	List<String> unique = null;
+	private HashSet<String> primitivePath = null;
+	private HashSet<String> primitiveUniquePath = null;
+	private List<String> unique = null;
 	
-	String regex = "(\\[[0-9]*\\]$)";
-	Pattern pattern = Pattern.compile(regex, Pattern.MULTILINE);
+	private String regex = "(\\[[0-9]*\\]$)";
+	private Pattern pattern = Pattern.compile(regex, Pattern.MULTILINE);
 	
-	JsonElement ele = null;
+	private JsonElement ele = null;
 	
-	String tmpPath = null;
+	private String tmpPath = null;
 	
+	/**
+	 * This constructor takes a Json as string.
+	 * @param jsonString it takes Json as string.
+	 */
 	public JFlat(String jsonString){
+		
 		this.jsonString = jsonString;
 		
 		this.conf = Configuration.defaultConfiguration()
@@ -61,9 +66,10 @@ public class JFlat {
 				.addOptions(Option.ALWAYS_RETURN_LIST);
 	}
 	
+	
 	/**
-	 * This method 
-	 * @return
+	 * This method does some pre processing and then calls make2D() to get the 2D representation of Json document.
+	 * @return returns a JFlat object
 	 */
 	public JFlat json2Sheet(){
 		
@@ -80,7 +86,6 @@ public class JFlat {
 		primitiveUniquePath = new LinkedHashSet<String>();
 		
 		for(String o : pathList){
-			// System.out.println(o);
 			Object tmp = parse.read(o);
 			
 			if(tmp==null){
@@ -91,7 +96,6 @@ public class JFlat {
 				if(dataType.equals("Boolean") || dataType.equals("Integer") || dataType.equals("String") || dataType.equals("Double") || dataType.equals("Long")){
 					primitivePath.add(o);
 				}else{
-					//System.out.println(dataType);
 				}
 			}
 		}
@@ -99,10 +103,8 @@ public class JFlat {
 		for(String o : primitivePath){
 			
 			Matcher m = pattern.matcher(o);
-			//System.out.println(o);
+
 			if(m.find()){
-				//System.out.println(o);
-				//System.out.println(m.group());
 				String tmp[] = o.replace("$", "").split("(\\[[0-9]*\\]$)");
 				tmp[0] = tmp[0].replaceAll("(\\[[0-9]*\\])", "");
 				primitiveUniquePath.add("/"+(tmp[0]+m.group()).replace("'][", "/").replace("[", "").replace("]", "").replace("''", "/").replace("'", ""));
@@ -119,6 +121,7 @@ public class JFlat {
 			header[i] = o;
 			i++;
 		}
+		
 		sheetMatrix.add(header);
 		
 		sheetMatrix.add(make2D(new Object[unique.size()], new Object[unique.size()], ele, "/"));
@@ -151,7 +154,15 @@ public class JFlat {
 		return this;
 	}
 	
-	public Object[] make2D(Object[] cur, Object[] old, JsonElement ele, String path){
+	/**
+	 * This method is the core algorithm which converts the Json document to its 2D representation. 
+	 * @param cur its the logical current row of the Json being processed
+	 * @param old it keeps the old row which is always assigned to the current row.
+	 * @param ele this keeps the part of json being parsed to 2D.
+	 * @param path this mantains the path of the Json element being processed.
+	 * @return
+	 */
+	private Object[] make2D(Object[] cur, Object[] old, JsonElement ele, String path){
 		cur = old.clone();
 		
 		boolean gotArray = false;
@@ -164,11 +175,8 @@ public class JFlat {
 					tmpPath = path+entry.getKey();
 					tmpPath = tmpPath.replaceAll("(\\/\\/[0-9]+)", "/").replaceAll("\\/\\/+", "/");
 					tmpPath = tmpPath.replaceAll("\\/[0-9]+\\/", "/");
-					//tmpPath = tmpPath.replaceAll("\\(obj\\)\\/", "/");
-					//System.out.println(tmpPath);
 					if(unique.contains(tmpPath)){
 						int index = unique.indexOf(tmpPath);
-						//cur[index] = entry.getValue().getAsJsonPrimitive().getAsString();
 						cur[index] = entry.getValue().getAsJsonPrimitive();
 					}
 					tmpPath = null;
@@ -178,7 +186,6 @@ public class JFlat {
 				}
 				else if(entry.getValue().isJsonArray()){
 					cur = make2D(new Object[unique.size()], cur, entry.getValue().getAsJsonArray(), path + entry.getKey() + "/");
-					
 				}
 			}
 			
@@ -193,10 +200,8 @@ public class JFlat {
 					tmpPath = path + arrIndex;
 					tmpPath = tmpPath.replaceAll("(\\/\\/[0-9]+)", "/").replaceAll("\\/\\/+", "/");
 					tmpPath = tmpPath.replaceAll("[0-9]+\\/", "");
-					//System.out.println(tmpPath);
 					if(unique.contains(tmpPath)){
 						int index = unique.indexOf(tmpPath);
-						//cur[index] = tmp.getAsJsonPrimitive().getAsString();
 						cur[index] = tmp.getAsJsonPrimitive();
 					}
 					tmpPath = null;
@@ -218,7 +223,12 @@ public class JFlat {
 		return cur;
 	}
 	
-	public boolean isInnerArray(JsonElement ele){
+	/**
+	 * This method checks whether object inside an array contains an array or not.
+	 * @param ele it a Json object inside an array
+	 * @return it returns true if Json object inside an array contains an array or else false
+	 */
+	private boolean isInnerArray(JsonElement ele){
 		
 		for(Map.Entry<String, JsonElement> entry : ele.getAsJsonObject().entrySet()){
 			if(entry.getValue().isJsonArray()){
@@ -238,16 +248,16 @@ public class JFlat {
 	}
 	
 	/**
-	 * 
-	 * @return
+	 * This method returns the sheet matrix.
+	 * @return List<Object>
 	 */
 	public List<Object[]> getJsonAsSheet(){
 		return this.sheetMatrix;
 	}
 	
 	/**
-	 * 
-	 * @param destination
+	 * This method writes the 2D representation in csv format with ',' as default delimiter.
+	 * @param destination it takes the destination path for the csv file.
 	 * @throws FileNotFoundException
 	 * @throws UnsupportedEncodingException
 	 */
@@ -256,14 +266,14 @@ public class JFlat {
 	}
 	
 	/**
-	 * 
-	 * @param destination
-	 * @param delimiter
+	 * This method writes the 2D representation in csv format with custom delimiter set by user.
+	 * @param destination it takes the destination path for the csv file.
+	 * @param delimiter it represents the delimiter set by user.
 	 * @throws FileNotFoundException
 	 * @throws UnsupportedEncodingException
 	 */
 	public void write2csv(String destination, char delimiter) throws FileNotFoundException, UnsupportedEncodingException{
-		PrintWriter writer = new PrintWriter(destination, "UTF-8");
+		PrintWriter writer = new PrintWriter(new File(destination), "UTF-8");
 		boolean comma = false;
 		for(Object[] o : this.sheetMatrix){
 			comma = false;

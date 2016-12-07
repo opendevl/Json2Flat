@@ -23,13 +23,8 @@ import com.jayway.jsonpath.DocumentContext;
 import com.jayway.jsonpath.JsonPath;
 import com.jayway.jsonpath.Option;
 
-/**
- * @author aptus
- * parsing.java
- */
-public class Parsing {
-	
-	static List<Object[]> arr = new ArrayList<Object[]>();
+public class Parse {
+static List<Object[]> arr = new ArrayList<Object[]>();
 	
 	static String regex = "(\\[[0-9]*\\]$)";
 	
@@ -45,7 +40,7 @@ public class Parsing {
 	 * @throws FileNotFoundException
 	 */
 	public static void main(String[] args) throws UnsupportedEncodingException, FileNotFoundException{
-		InputStream is = Parsing.class.getResourceAsStream("/test.json") ;  
+		InputStream is = Parse.class.getResourceAsStream("/tmp.json") ;  
 		Reader reader = new BufferedReader(new InputStreamReader(is, "UTF-8"));
 		JsonElement x = new JsonParser().parse(reader);
 		
@@ -235,5 +230,4 @@ public class Parsing {
 		}
 		return false;
 	}
-
 }
