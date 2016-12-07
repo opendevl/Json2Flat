@@ -6,7 +6,7 @@ But still if you want to use here goes the dependency for Maven.
 <dependency>
     <groupId>com.github.opendevl</groupId>
     <artifactId>json2flat</artifactId>
-    <version>1.0</version>
+    <version>1.0.1</version>
 </dependency>
 ```
 
