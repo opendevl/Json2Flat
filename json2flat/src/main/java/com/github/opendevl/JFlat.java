@@ -22,7 +22,7 @@ import com.jayway.jsonpath.Option;
 /**
  * This class converts a Json document in a 2D matrix format like CSV.
  * @author opendevl
- * @version 1.0
+ * @version 1.0.1
  */
 public class JFlat {
 	
