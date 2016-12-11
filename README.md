@@ -1,5 +1,6 @@
 # Json2Flat
-This library converts **JSON** documents to **CSV**. You don't need any **POJO'**s in order to convert.
+This library converts **JSON** documents to **CSV**.  
+You don't need any **POJO'**s in order to convert. 
 This library uses google-gson and JsonPath for conversion.  
 
 Dependency for Maven. 
