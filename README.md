@@ -1,7 +1,9 @@
 # Json2Flat
-Converting JSON to flat CSV. No POJO's required.  
-This is just a beta version.  
-But still if you want to use here goes the dependency for Maven. 
+This library converts **JSON** documents to **CSV**.  
+You don't need any **POJO'**s in order to convert.  
+This library uses google-gson and JsonPath for conversion.  
+
+Dependency for Maven. 
 ```xml
 <dependency>
     <groupId>com.github.opendevl</groupId>
