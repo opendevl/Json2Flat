@@ -1,25 +1,87 @@
-{
- "Code":2,
- "Description":"OK",
- "Status":0,
- "Items":[{ "City":"nameOfCity",
-        "Country":"nameOfCountry",
-        "CountryCode":"US",
-        "Latitude":"11.11111",
-        "Longitude":"-11.11111",
-        "Name":"name of Company",
-        "Region":"nameofRegion",
-        "ServisID":"111AAA111AA",
-        "SiteAddress":"number and street 2301",
-        "ZipCode":"1111"},
-        {"City":"nameOfCity2",
-        "Country":"nameOfCountry",
-        "CountryCode":"US",
-        "Latitude":"22.22222",
-        "Longitude":"22.2222222222",
-        "Name":"name of Company2",
-        "Region":"nameofRegion",
-        "ServisID":"111BBB111BB",
-        "SiteAddress":null,
-        "ZipCode":null}
-        ]}
+  {
+     "account_id": "10155225473138747",
+     "account_name": "Yellowfin",
+     "campaign_id": "23842501952630443",
+     "campaign_name": "Website Clicks",
+     "app_store_clicks": "0",
+     "buying_type": "AUCTION",
+     "canvas_avg_view_percent": "0",
+     "canvas_avg_view_time": "0",
+     "clicks": "32",
+     "cost_per_inline_link_click": "0.130645",
+     "cost_per_inline_post_engagement": "0.130645",
+     "cost_per_total_action": "0.130645",
+     "cost_per_unique_click": "0.126563",
+     "cost_per_unique_inline_link_click": "0.130645",
+     "cpc": "0.126563",
+     "cpm": "2.551985",
+     "cpp": "2.59283",
+     "ctr": "2.016383",
+     "date_start": "2016-08-05",
+     "date_stop": "2016-08-05",
+     "actions": [
+        {
+           "action_type": "link_click",
+           "value": "31"
+        },
+        {
+           "action_type": "page_engagement",
+           "value": "31"
+        },
+        {
+           "action_type": "post_engagement",
+           "value": "31"
+        }
+     ],
+     "cost_per_action_type": [
+        {
+           "action_type": "link_click",
+           "value": "0.130645"
+        },
+        {
+           "action_type": "page_engagement",
+           "value": "0.130645"
+        },
+        {
+           "action_type": "post_engagement",
+           "value": "0.130645"
+        }
+     ],
+     "cost_per_unique_action_type": [
+        {
+           "action_type": "link_click",
+           "value": "0.130645"
+        },
+        {
+           "action_type": "page_engagement",
+           "value": "0.130645"
+        },
+        {
+           "action_type": "post_engagement",
+           "value": "0.130645"
+        }
+     ],
+     "unique_actions": [
+        {
+           "action_type": "link_click",
+           "value": "31"
+        },
+        {
+           "action_type": "page_engagement",
+           "value": "31"
+        },
+        {
+           "action_type": "post_engagement",
+           "value": "31"
+        }
+     ],
+     "website_ctr": [
+        {
+           "action_type": "link_click",
+           "value": "1.953371"
+        }
+     ],
+     "age": "25-34",
+     "gender": "female"
+     
+  }

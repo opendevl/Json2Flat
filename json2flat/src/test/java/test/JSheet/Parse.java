@@ -16,6 +16,7 @@ import java.util.TreeSet;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import com.github.opendevl.JOrder;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 import com.jayway.jsonpath.Configuration;
@@ -24,7 +25,9 @@ import com.jayway.jsonpath.JsonPath;
 import com.jayway.jsonpath.Option;
 
 public class Parse {
-static List<Object[]> arr = new ArrayList<Object[]>();
+	static List<Object[]> arr = new ArrayList<Object[]>();
+
+	static JOrder makeOrder = new JOrder();
 	
 	static String regex = "(\\[[0-9]*\\]$)";
 	
@@ -150,6 +153,14 @@ static List<Object[]> arr = new ArrayList<Object[]>();
 	
 	public static Object[] make2D(Object[] cur, Object[] old, JsonElement ele, String path){
 		cur = old.clone();
+		
+		/* applying order to JSON.
+		 * Order - 
+		 * 		1) JSON premitive
+		 * 		2) JSON Array
+		 * 		3) JSON Object ( order of JSON Object is yet to be descided)
+		 * */
+		ele = makeOrder.orderJson(ele);
 		
 		boolean gotArray = false;
 		
