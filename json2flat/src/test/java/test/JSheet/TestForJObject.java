@@ -5,13 +5,13 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Map;
 
-import com.github.opendevl.JOrder;
+import com.github.opendevl.OrderJson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 
 public class TestForJObject {
 	public static void main(String args[]) throws IOException{
-		JOrder haveOrder = new JOrder();
+		OrderJson haveOrder = new OrderJson();
 		
 		String source = TSheet.class.getResource("/tmp.json").getPath();
 		String jsonString = new String(Files.readAllBytes(Paths.get(source)));

@@ -8,7 +8,7 @@ import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.reflect.TypeToken;
 
-public class JOrder {
+public class OrderJson {
 	
 	Type type = new TypeToken<Map<String, Object>>(){}.getType();
 	
@@ -20,18 +20,18 @@ public class JOrder {
 	
 	Gson jsonToFro = null;
 	
-	public JOrder(){
+	public OrderJson(){
+		
+		jsonToFro = new Gson();
+	}
+	
+	public JsonElement orderJson(JsonElement ele){
 		
 		origMap  = new LinkedHashMap<String, Object>();
 		
 		jsonPre = new LinkedHashMap<String, Object>();
 		jsonArr = new LinkedHashMap<String, Object>();
 		jsonObj = new LinkedHashMap<String, Object>();
-		
-		jsonToFro = new Gson();
-	}
-	
-	public JsonElement orderJson(JsonElement ele){
 		
 		//converting JsonElement to Map
 		origMap = jsonToFro.fromJson(ele, type);

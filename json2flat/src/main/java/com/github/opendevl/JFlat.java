@@ -49,6 +49,8 @@ public class JFlat {
 	
 	private String tmpPath = null;
 	
+	private OrderJson makeOrder = new OrderJson();
+	
 	/**
 	 * This constructor takes a Json as string.
 	 * @param jsonString it takes Json as string.
@@ -163,11 +165,21 @@ public class JFlat {
 	 * @return
 	 */
 	private Object[] make2D(Object[] cur, Object[] old, JsonElement ele, String path){
+		
 		cur = old.clone();
 		
 		boolean gotArray = false;
 		
 		if(ele.isJsonObject()){
+			
+			/* applying order to JSON.
+			 * Order - 
+			 * 		1) JSON premitive
+			 * 		2) JSON Array
+			 * 		3) JSON Object ( order of JSON Object is yet to be descided)
+			 * */
+			//OrderJson makeOrder = new OrderJson();
+			ele = makeOrder.orderJson(ele);
 			
 			for(Map.Entry<String, JsonElement> entry : ele.getAsJsonObject().entrySet()){
 				

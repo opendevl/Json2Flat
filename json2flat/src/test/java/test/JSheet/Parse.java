@@ -16,7 +16,7 @@ import java.util.TreeSet;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import com.github.opendevl.JOrder;
+import com.github.opendevl.OrderJson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 import com.jayway.jsonpath.Configuration;
@@ -27,7 +27,7 @@ import com.jayway.jsonpath.Option;
 public class Parse {
 	static List<Object[]> arr = new ArrayList<Object[]>();
 
-	static JOrder makeOrder = new JOrder();
+	static OrderJson makeOrder = new OrderJson();
 	
 	static String regex = "(\\[[0-9]*\\]$)";
 	
@@ -105,12 +105,20 @@ public class Parse {
 		for(String o : unique){
 			System.out.println(o);
 		}
+		Object[] header = new Object[unique.size()];
+		int i = 0;
+		for(String o : unique){
+			header[i] = o;
+			i++;
+		}
+		
+		arr.add(header);
 		
 		
 		
 		System.out.println("=============" + unique.size()) ;
 		
-		arr.add(make2D(new Object[unique.size()], new Object[unique.size()], x, "/"));
+		arr.add(make2D(new Object[unique.size()], new Object[unique.size()], x, "/",true));
 		//makePremObj(new Object[unique.size()], new Object[unique.size()], x, "/");
 		
 		
@@ -151,20 +159,25 @@ public class Parse {
 		writer.close();
 	}
 	
-	public static Object[] make2D(Object[] cur, Object[] old, JsonElement ele, String path){
-		cur = old.clone();
+	public static Object[] make2D(Object[] cur, Object[] old, JsonElement ele, String path, boolean repeat){
+		if(repeat)
+			cur = old.clone();
 		
-		/* applying order to JSON.
-		 * Order - 
-		 * 		1) JSON premitive
-		 * 		2) JSON Array
-		 * 		3) JSON Object ( order of JSON Object is yet to be descided)
-		 * */
-		ele = makeOrder.orderJson(ele);
+		
 		
 		boolean gotArray = false;
 		
 		if(ele.isJsonObject()){
+			
+			/* applying order to JSON.
+			 * Order - 
+			 * 		1) JSON premitive
+			 * 		2) JSON Array
+			 * 		3) JSON Object ( order of JSON Object is yet to be descided)
+			 * */
+			System.out.println(ele);
+			//OrderJson makeOrder = new OrderJson();
+			ele = makeOrder.orderJson(ele);
 			
 			for(Map.Entry<String, JsonElement> entry : ele.getAsJsonObject().entrySet()){
 				
@@ -182,10 +195,10 @@ public class Parse {
 					tmpPath = null;
 				}
 				else if(entry.getValue().isJsonObject()){
-					cur = (make2D(new Object[unique.size()], cur, entry.getValue().getAsJsonObject(), path + entry.getKey() + "(o)/"));
+					cur = (make2D(new Object[unique.size()], cur, entry.getValue().getAsJsonObject(), path + entry.getKey() + "(o)/", repeat));
 				}
 				else if(entry.getValue().isJsonArray()){
-					cur = make2D(new Object[unique.size()], cur, entry.getValue().getAsJsonArray(), path + entry.getKey() + "//");
+					cur = make2D(new Object[unique.size()], cur, entry.getValue().getAsJsonArray(), path + entry.getKey() + "//", repeat);
 					
 				}
 			}
@@ -212,12 +225,12 @@ public class Parse {
 				else{					
 					if(tmp.isJsonObject()){
 						gotArray = isInnerArray(tmp);
-						arr.add(make2D(new Object[unique.size()], cur, tmp.getAsJsonObject(), path + arrIndex + "/"));
+						arr.add(make2D(new Object[unique.size()], cur, tmp.getAsJsonObject(), path + arrIndex + "/", repeat));
 						if(gotArray){
 							arr.remove(arr.size()-1);
 						}
 					}else if(tmp.isJsonArray()){
-						make2D(new Object[unique.size()], cur, tmp.getAsJsonArray(), path + arrIndex + "//");
+						make2D(new Object[unique.size()], cur, tmp.getAsJsonArray(), path + arrIndex + "//", repeat);
 					}
 					
 					
