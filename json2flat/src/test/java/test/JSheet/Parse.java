@@ -243,13 +243,13 @@ public class Parse {
 	
 	
 	public static boolean isInnerArray(JsonElement ele){
-		
+		int i = 0;
 		for(Map.Entry<String, JsonElement> entry : ele.getAsJsonObject().entrySet()){
 			if(entry.getValue().isJsonArray()){
 				if(entry.getValue().getAsJsonArray().size()>0)
 					return true;
 			}
-				
+			System.out.println(i++);
 			
 		}
 		return false;

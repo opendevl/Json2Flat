@@ -39,17 +39,22 @@ public class OrderJson {
 		//Iterating the Map object to to get type of Object
 		for(Map.Entry<String, Object> entry : origMap.entrySet()){
 			
-			if(entry.getValue().getClass().getSimpleName().equals("ArrayList")){
-				
-				//if Object is of type ArrayList push it to jsonArr Map
-				jsonArr.put(entry.getKey(), entry.getValue());
-				
-			}else{
-				
-				//if Object is of type Premitive push it to jsonPre.
-				jsonPre.put(entry.getKey(), entry.getValue());
+			try{
+				//adding check if value of key in json is null
+				if(entry.getValue() == null || 
+						entry.getValue().getClass().getSimpleName().equals("ArrayList")){
+					
+					//if Object is of type ArrayList push it to jsonArr Map
+					jsonArr.put(entry.getKey(), entry.getValue());
+					
+				}else{
+					
+					//if Object is of type Premitive push it to jsonPre.
+					jsonPre.put(entry.getKey(), entry.getValue());
+				}
+			}catch(Exception ex){
+				ex.printStackTrace();
 			}
-			
 			//Yet to descide about if type is of JsonObject
 			
 		}
