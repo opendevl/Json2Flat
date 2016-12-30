@@ -16,6 +16,7 @@ import java.util.TreeSet;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import com.github.opendevl.OrderJson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 import com.jayway.jsonpath.Configuration;
@@ -24,7 +25,9 @@ import com.jayway.jsonpath.JsonPath;
 import com.jayway.jsonpath.Option;
 
 public class Parse {
-static List<Object[]> arr = new ArrayList<Object[]>();
+	static List<Object[]> arr = new ArrayList<Object[]>();
+
+	static OrderJson makeOrder = new OrderJson();
 	
 	static String regex = "(\\[[0-9]*\\]$)";
 	
@@ -89,11 +92,11 @@ static List<Object[]> arr = new ArrayList<Object[]>();
 			if(m.find()){
 				System.out.println(o);
 				System.out.println(m.group());
-				String tmp[] = o.replace("$", "").split("(\\[[0-9]\\]$)");
-				tmp[0] = tmp[0].replaceAll("(\\[[0-9]\\])", "");
+				String tmp[] = o.replace("$", "").split("(\\[[0-9]*\\]$)");
+				tmp[0] = tmp[0].replaceAll("(\\[[0-9]*\\])", "");
 				primitiveStringUnique.add("/"+(tmp[0]+m.group()).replace("'][", "/").replace("[", "").replace("]", "").replace("''", "/").replace("'", ""));
 			}else{
-				primitiveStringUnique.add("/"+o.replace("$", "").replaceAll("(\\[[0-9]\\])", "").replace("[", "").replace("]", "").replace("''", "/").replace("'", ""));
+				primitiveStringUnique.add("/"+o.replace("$", "").replaceAll("(\\[[0-9]*\\])", "").replace("[", "").replace("]", "").replace("''", "/").replace("'", ""));
 			}
 		}
 		
@@ -102,6 +105,14 @@ static List<Object[]> arr = new ArrayList<Object[]>();
 		for(String o : unique){
 			System.out.println(o);
 		}
+		Object[] header = new Object[unique.size()];
+		int i = 0;
+		for(String o : unique){
+			header[i] = o;
+			i++;
+		}
+		
+		arr.add(header);
 		
 		
 		
@@ -129,7 +140,7 @@ static List<Object[]> arr = new ArrayList<Object[]>();
 		}
 		
 		
-		PrintWriter writer = new PrintWriter("/home/aptus/Desktop/json2csv.csv", "UTF-8");
+		PrintWriter writer = new PrintWriter("/home/aptus/Desktop/xyz.csv", "UTF-8");
 		boolean comma = false;
 		for(Object[] o : arr){
 			comma = false;
@@ -138,7 +149,7 @@ static List<Object[]> arr = new ArrayList<Object[]>();
 					writer.print(comma == true ? "," : "");
 				}
 				else{
-					writer.print(comma == true ? ","+t.toString() : t.toString());
+					writer.print(comma == true ? ",\""+t.toString() +"\"": t.toString());
 				}
 				if(comma == false)
 					comma = true;
@@ -149,11 +160,23 @@ static List<Object[]> arr = new ArrayList<Object[]>();
 	}
 	
 	public static Object[] make2D(Object[] cur, Object[] old, JsonElement ele, String path){
-		cur = old.clone();
+			cur = old.clone();
+		
+		
 		
 		boolean gotArray = false;
 		
 		if(ele.isJsonObject()){
+			
+			/* applying order to JSON.
+			 * Order - 
+			 * 		1) JSON premitive
+			 * 		2) JSON Array
+			 * 		3) JSON Object ( order of JSON Object is yet to be descided)
+			 * */
+			System.out.println(ele);
+			//OrderJson makeOrder = new OrderJson();
+			ele = makeOrder.orderJson(ele);
 			
 			for(Map.Entry<String, JsonElement> entry : ele.getAsJsonObject().entrySet()){
 				
@@ -162,7 +185,7 @@ static List<Object[]> arr = new ArrayList<Object[]>();
 					//System.out.println(tmpPath);
 					tmpPath = tmpPath.replaceAll("(\\/\\/[0-9]+)", "/").replaceAll("\\/\\/+", "/");
 					tmpPath = tmpPath.replaceAll("\\/[0-9]+\\/", "/");
-					tmpPath = tmpPath.replaceAll("\\(o\\)\\/", "/");
+					//tmpPath = tmpPath.replaceAll("\\(o\\)\\/", "/");
 					System.out.println(tmpPath);
 					if(unique.contains(tmpPath)){
 						int index = unique.indexOf(tmpPath);
@@ -171,7 +194,7 @@ static List<Object[]> arr = new ArrayList<Object[]>();
 					tmpPath = null;
 				}
 				else if(entry.getValue().isJsonObject()){
-					cur = (make2D(new Object[unique.size()], cur, entry.getValue().getAsJsonObject(), path + entry.getKey() + "(o)/"));
+					cur = make2D(new Object[unique.size()], cur, entry.getValue().getAsJsonObject(), path + entry.getKey() + "/");
 				}
 				else if(entry.getValue().isJsonArray()){
 					cur = make2D(new Object[unique.size()], cur, entry.getValue().getAsJsonArray(), path + entry.getKey() + "//");
@@ -219,13 +242,15 @@ static List<Object[]> arr = new ArrayList<Object[]>();
 	
 	
 	public static boolean isInnerArray(JsonElement ele){
+		int i = 0;
 		
 		for(Map.Entry<String, JsonElement> entry : ele.getAsJsonObject().entrySet()){
+			System.out.println((i++) + ")  " + entry.getKey() + " --> " + entry.getValue());
 			if(entry.getValue().isJsonArray()){
 				if(entry.getValue().getAsJsonArray().size()>0)
 					return true;
 			}
-				
+			//System.out.println(i++);
 			
 		}
 		return false;

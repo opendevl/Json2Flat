@@ -10,7 +10,7 @@ Dependency for Maven.
 <dependency>
     <groupId>com.github.opendevl</groupId>
     <artifactId>json2flat</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
 </dependency>
 ```
 
