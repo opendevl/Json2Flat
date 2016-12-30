@@ -9,7 +9,7 @@ import com.github.opendevl.JFlat;
 public class TSheet {
 	public static void main(String[] args) throws IOException{
 		
-		String source = TSheet.class.getResource("/rows.json").getPath();
+		String source = TSheet.class.getResource("/new.json").getPath();
 		
 		String destination = TSheet.class.getResource("/json2csv.csv").getPath().split("target")[0]
 				+"src/test/resources"
@@ -33,7 +33,7 @@ public class TSheet {
 		//flatMe.json2Sheet().write2csv(destination);
 		
 		//directly write the JSON document to CSV but with delimiter
-		flatMe.json2Sheet().write2csv("/home/aptus/Desktop/big.csv", ',');
+		flatMe.json2Sheet().write2csv("/home/aptus/Desktop/test.csv", ',');
 		
 	}
 }

@@ -92,11 +92,11 @@ public class Parse {
 			if(m.find()){
 				System.out.println(o);
 				System.out.println(m.group());
-				String tmp[] = o.replace("$", "").split("(\\[[0-9]\\]$)");
-				tmp[0] = tmp[0].replaceAll("(\\[[0-9]\\])", "");
+				String tmp[] = o.replace("$", "").split("(\\[[0-9]*\\]$)");
+				tmp[0] = tmp[0].replaceAll("(\\[[0-9]*\\])", "");
 				primitiveStringUnique.add("/"+(tmp[0]+m.group()).replace("'][", "/").replace("[", "").replace("]", "").replace("''", "/").replace("'", ""));
 			}else{
-				primitiveStringUnique.add("/"+o.replace("$", "").replaceAll("(\\[[0-9]\\])", "").replace("[", "").replace("]", "").replace("''", "/").replace("'", ""));
+				primitiveStringUnique.add("/"+o.replace("$", "").replaceAll("(\\[[0-9]*\\])", "").replace("[", "").replace("]", "").replace("''", "/").replace("'", ""));
 			}
 		}
 		
@@ -118,7 +118,7 @@ public class Parse {
 		
 		System.out.println("=============" + unique.size()) ;
 		
-		arr.add(make2D(new Object[unique.size()], new Object[unique.size()], x, "/",true));
+		arr.add(make2D(new Object[unique.size()], new Object[unique.size()], x, "/"));
 		//makePremObj(new Object[unique.size()], new Object[unique.size()], x, "/");
 		
 		
@@ -140,7 +140,7 @@ public class Parse {
 		}
 		
 		
-		PrintWriter writer = new PrintWriter("/home/aptus/Desktop/json2csv.csv", "UTF-8");
+		PrintWriter writer = new PrintWriter("/home/aptus/Desktop/xyz.csv", "UTF-8");
 		boolean comma = false;
 		for(Object[] o : arr){
 			comma = false;
@@ -149,7 +149,7 @@ public class Parse {
 					writer.print(comma == true ? "," : "");
 				}
 				else{
-					writer.print(comma == true ? ","+t.toString() : t.toString());
+					writer.print(comma == true ? ",\""+t.toString() +"\"": t.toString());
 				}
 				if(comma == false)
 					comma = true;
@@ -159,8 +159,7 @@ public class Parse {
 		writer.close();
 	}
 	
-	public static Object[] make2D(Object[] cur, Object[] old, JsonElement ele, String path, boolean repeat){
-		if(repeat)
+	public static Object[] make2D(Object[] cur, Object[] old, JsonElement ele, String path){
 			cur = old.clone();
 		
 		
@@ -186,7 +185,7 @@ public class Parse {
 					//System.out.println(tmpPath);
 					tmpPath = tmpPath.replaceAll("(\\/\\/[0-9]+)", "/").replaceAll("\\/\\/+", "/");
 					tmpPath = tmpPath.replaceAll("\\/[0-9]+\\/", "/");
-					tmpPath = tmpPath.replaceAll("\\(o\\)\\/", "/");
+					//tmpPath = tmpPath.replaceAll("\\(o\\)\\/", "/");
 					System.out.println(tmpPath);
 					if(unique.contains(tmpPath)){
 						int index = unique.indexOf(tmpPath);
@@ -195,10 +194,10 @@ public class Parse {
 					tmpPath = null;
 				}
 				else if(entry.getValue().isJsonObject()){
-					cur = (make2D(new Object[unique.size()], cur, entry.getValue().getAsJsonObject(), path + entry.getKey() + "(o)/", repeat));
+					cur = make2D(new Object[unique.size()], cur, entry.getValue().getAsJsonObject(), path + entry.getKey() + "/");
 				}
 				else if(entry.getValue().isJsonArray()){
-					cur = make2D(new Object[unique.size()], cur, entry.getValue().getAsJsonArray(), path + entry.getKey() + "//", repeat);
+					cur = make2D(new Object[unique.size()], cur, entry.getValue().getAsJsonArray(), path + entry.getKey() + "//");
 					
 				}
 			}
@@ -225,12 +224,12 @@ public class Parse {
 				else{					
 					if(tmp.isJsonObject()){
 						gotArray = isInnerArray(tmp);
-						arr.add(make2D(new Object[unique.size()], cur, tmp.getAsJsonObject(), path + arrIndex + "/", repeat));
+						arr.add(make2D(new Object[unique.size()], cur, tmp.getAsJsonObject(), path + arrIndex + "/"));
 						if(gotArray){
 							arr.remove(arr.size()-1);
 						}
 					}else if(tmp.isJsonArray()){
-						make2D(new Object[unique.size()], cur, tmp.getAsJsonArray(), path + arrIndex + "//", repeat);
+						make2D(new Object[unique.size()], cur, tmp.getAsJsonArray(), path + arrIndex + "//");
 					}
 					
 					
@@ -244,12 +243,14 @@ public class Parse {
 	
 	public static boolean isInnerArray(JsonElement ele){
 		int i = 0;
+		
 		for(Map.Entry<String, JsonElement> entry : ele.getAsJsonObject().entrySet()){
+			System.out.println((i++) + ")  " + entry.getKey() + " --> " + entry.getValue());
 			if(entry.getValue().isJsonArray()){
 				if(entry.getValue().getAsJsonArray().size()>0)
 					return true;
 			}
-			System.out.println(i++);
+			//System.out.println(i++);
 			
 		}
 		return false;
