@@ -7,9 +7,8 @@ import java.nio.file.Paths;
 import com.github.opendevl.JFlat;
 import com.github.opendevl.JFlat.fetchMode;
 
-public class TSheet {
-
-	public static void main(String[] args) throws IOException{
+public class xyz {
+public static void main(String[] args) throws IOException{
 		
 		String source = TSheet.class.getResource("/new.json").getPath();
 		
@@ -19,7 +18,7 @@ public class TSheet {
 		
 		String jsonString = new String(Files.readAllBytes(Paths.get(source)));
 		
-		JFlat flatMe = new JFlat("https://raw.githubusercontent.com/kamalpradhan95/test_repo/master/store.json",fetchMode.URL);
+		JFlat flatMe = new JFlat(jsonString,fetchMode.FILE);
 		
 		
 		
