@@ -2,8 +2,12 @@ package com.github.opendevl;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
+import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
@@ -11,6 +15,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import org.apache.commons.io.IOUtils;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
@@ -51,6 +57,11 @@ public class JFlat {
 	private String tmpPath = null;
 
 	private OrderJson makeOrder = new OrderJson();
+	
+	
+	public static enum fetchMode {
+		STRING,URL,FILE
+	}
 
 	/**
 	 * This constructor takes a Json as string.
@@ -58,16 +69,35 @@ public class JFlat {
 	 * @param jsonString
 	 *            it takes Json as string.
 	 */
-	public JFlat(String jsonString) {
+	
+	
+	public JFlat(String jsonString,fetchMode sourceType) {
 
-		this.jsonString = jsonString;
-
+		if(sourceType.equals(fetchMode.URL)){
+			try{
+				URL url = new URL(new String(jsonString));
+				this.jsonString = IOUtils.toString(url.openStream());
+			}catch (Exception e) {
+				e.printStackTrace();
+			}
+		}else if(sourceType.equals(fetchMode.FILE)){
+			try {
+				this.jsonString = new String(Files.readAllBytes(Paths.get(jsonString)));
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}else {
+			this.jsonString = jsonString;
+		}
+		
 		this.conf = Configuration.defaultConfiguration().addOptions(Option.DEFAULT_PATH_LEAF_TO_NULL)
 				.addOptions(Option.SUPPRESS_EXCEPTIONS);
 
 		this.pathConf = Configuration.defaultConfiguration().addOptions(Option.AS_PATH_LIST)
 				.addOptions(Option.ALWAYS_RETURN_LIST);
 	}
+	
+	
 
 	/**
 	 * This method does some pre processing and then calls make2D() to get the
