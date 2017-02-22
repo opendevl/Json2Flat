@@ -9,10 +9,12 @@ import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.EnumSet;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -24,26 +26,33 @@ import com.jayway.jsonpath.Configuration;
 import com.jayway.jsonpath.DocumentContext;
 import com.jayway.jsonpath.JsonPath;
 import com.jayway.jsonpath.Option;
+import com.jayway.jsonpath.spi.json.JacksonJsonProvider;
+import com.jayway.jsonpath.spi.json.JsonProvider;
+import com.jayway.jsonpath.spi.mapper.JacksonMappingProvider;
+import com.jayway.jsonpath.spi.mapper.MappingProvider;
 
 /**
  * This class converts a Json document in a 2D matrix format like CSV.
  * 
  * @author opendevl
- * @version 1.0.1
+ * @version 1.0.3-SNAPSHOT
  */
 public class JFlat {
-
+	 
 	private String jsonString = null;
 
 	private List<Object[]> sheetMatrix = null;
 
 	private List<String> pathList = null;
 
-	private Configuration conf = null;
-	private Configuration pathConf = null;
+	/*
+	 * private Configuration conf = null; private Configuration pathConf = null;
+	 */
 
-	private DocumentContext parse = null;
-	private DocumentContext parsePath = null;
+	// private DocumentContext parse = null;
+	// private DocumentContext parsePath = null;
+
+	private String tmp[] = null;
 
 	private HashSet<String> primitivePath = null;
 	private HashSet<String> primitiveUniquePath = null;
@@ -59,9 +68,23 @@ public class JFlat {
 	private OrderJson makeOrder = new OrderJson();
 	
 	
-	public static enum fetchMode {
+	/*public static enum fetchMode {
 		STRING,URL,FILE
-	}
+	}*/
+
+	/*
+	 * static{ Configuration.setDefaults(new Configuration.Defaults() { private
+	 * final JsonProvider jsonProvider = new JacksonJsonProvider(); private
+	 * final MappingProvider mappingProvider = new JacksonMappingProvider();
+	 * 
+	 * //@Override public JsonProvider jsonProvider() { return jsonProvider; }
+	 * 
+	 * //@Override public MappingProvider mappingProvider() { return
+	 * mappingProvider; }
+	 * 
+	 * //@Override public Set options() { return EnumSet.noneOf(Option.class); }
+	 * }); }
+	 */
 
 	/**
 	 * This constructor takes a Json as string.
@@ -70,8 +93,7 @@ public class JFlat {
 	 *            it takes Json as string.
 	 */
 	
-	
-	public JFlat(String jsonString,fetchMode sourceType) {
+	/*public JFlat(String jsonString,fetchMode sourceType) {
 
 		if(sourceType.equals(fetchMode.URL)){
 			try{
@@ -89,12 +111,12 @@ public class JFlat {
 		}else {
 			this.jsonString = jsonString;
 		}
-		
-		this.conf = Configuration.defaultConfiguration().addOptions(Option.DEFAULT_PATH_LEAF_TO_NULL)
-				.addOptions(Option.SUPPRESS_EXCEPTIONS);
+	}*/
 
-		this.pathConf = Configuration.defaultConfiguration().addOptions(Option.AS_PATH_LIST)
-				.addOptions(Option.ALWAYS_RETURN_LIST);
+	public JFlat(String jsonString) {
+
+		this.jsonString = jsonString;
+
 	}
 	
 	
@@ -107,14 +129,47 @@ public class JFlat {
 	 */
 	public JFlat json2Sheet() {
 
+		Configuration.setDefaults(new Configuration.Defaults() {
+			private final JsonProvider jsonProvider = new JacksonJsonProvider();
+			private final MappingProvider mappingProvider = new JacksonMappingProvider();
+
+			// @Override
+			public JsonProvider jsonProvider() {
+				return jsonProvider;
+			}
+
+			// @Override
+			public MappingProvider mappingProvider() {
+				return mappingProvider;
+			}
+
+			// @Override
+			public Set options() {
+				return EnumSet.noneOf(Option.class);
+			}
+		});
+
+		Configuration conf = Configuration.defaultConfiguration().addOptions(Option.DEFAULT_PATH_LEAF_TO_NULL)
+				.addOptions(Option.SUPPRESS_EXCEPTIONS);
+
+		Configuration pathConf = Configuration.defaultConfiguration().addOptions(Option.AS_PATH_LIST)
+				.addOptions(Option.ALWAYS_RETURN_LIST);
+
+		DocumentContext parse = null;
+
 		sheetMatrix = new ArrayList<Object[]>();
 
 		ele = new JsonParser().parse(this.jsonString);
 
-		parse = JsonPath.using(conf).parse(this.jsonString);
-		parsePath = JsonPath.using(pathConf).parse(this.jsonString);
+		pathList = JsonPath.using(pathConf).parse(this.jsonString).read("$..*");
 
-		pathList = parsePath.read("$..*");
+		parse = JsonPath.using(conf).parse(this.jsonString);
+		/*
+		 * parse = JsonPath.using(conf).parse(this.jsonString); parsePath =
+		 * JsonPath.using(pathConf).parse(this.jsonString);
+		 * 
+		 * pathList = parsePath.read("$..*");
+		 */
 
 		primitivePath = new LinkedHashSet<String>();
 		primitiveUniquePath = new LinkedHashSet<String>();
@@ -131,6 +186,7 @@ public class JFlat {
 						|| dataType.equals("Double") || dataType.equals("Long")) {
 					primitivePath.add(o);
 				} else {
+					// its not a primitive data type
 				}
 			}
 		}
@@ -140,7 +196,7 @@ public class JFlat {
 			Matcher m = pattern.matcher(o);
 
 			if (m.find()) {
-				String tmp[] = o.replace("$", "").split("(\\[[0-9]*\\]$)");
+				tmp = o.replace("$", "").split("(\\[[0-9]*\\]$)");
 				tmp[0] = tmp[0].replaceAll("(\\[[0-9]*\\])", "");
 				primitiveUniquePath.add("/" + (tmp[0] + m.group()).replace("'][", "/").replace("[", "").replace("]", "")
 						.replace("''", "/").replace("'", ""));
@@ -161,7 +217,7 @@ public class JFlat {
 
 		sheetMatrix.add(header);
 
-		sheetMatrix.add(make2D(new Object[unique.size()], new Object[unique.size()], ele, "/"));
+		sheetMatrix.add(make2D(new Object[unique.size()], new Object[unique.size()], ele, "$"));
 
 		Object last[] = sheetMatrix.get(sheetMatrix.size() - 1);
 		Object secondLast[] = sheetMatrix.get(sheetMatrix.size() - 2);
@@ -224,20 +280,41 @@ public class JFlat {
 			for (Map.Entry<String, JsonElement> entry : ele.getAsJsonObject().entrySet()) {
 
 				if (entry.getValue().isJsonPrimitive()) {
-					tmpPath = path + entry.getKey();
+					/*tmpPath = path + entry.getKey();
 					tmpPath = tmpPath.replaceAll("(\\/\\/[0-9]+)", "/").replaceAll("\\/\\/+", "/");
-					tmpPath = tmpPath.replaceAll("\\/[0-9]+\\/", "/");
+					tmpPath = tmpPath.replaceAll("\\/[0-9]+\\/", "/");*/
+					
+					
+					tmpPath = path +"['"+ entry.getKey()+"']";
+					Matcher m = pattern.matcher(tmpPath);
+					// //System.out.println(o);
+					if (m.find()) {
+						////System.out.println(o);
+						////System.out.println(m.group());
+						String[] tmp = tmpPath.replace("$", "").split("(\\[[0-9]*\\]$)");
+						tmp[0] = tmp[0].replaceAll("(\\[[0-9]*\\])", "");
+						tmpPath = ("/" + (tmp[0] + m.group()).replace("'][", "/").replace("[", "")
+								.replace("]", "").replace("''", "/").replace("'", ""));
+					} else {
+						tmpPath = ("/" + tmpPath.replace("$", "").replaceAll("(\\[[0-9]*\\])", "").replace("[", "")
+								.replace("]", "").replace("''", "/").replace("'", ""));
+					}
+					
 					if (unique.contains(tmpPath)) {
 						int index = unique.indexOf(tmpPath);
 						cur[index] = entry.getValue().getAsJsonPrimitive();
 					}
 					tmpPath = null;
 				} else if (entry.getValue().isJsonObject()) {
-					cur = (make2D(new Object[unique.size()], cur, entry.getValue().getAsJsonObject(),
-							path + entry.getKey() + "/"));
+					/*cur = (make2D(new Object[unique.size()], cur, entry.getValue().getAsJsonObject(),
+							path + entry.getKey() + "/"));*/
+					cur = make2D(new Object[unique.size()], cur, entry.getValue().getAsJsonObject(),
+							path +"['" + entry.getKey()+"']");
 				} else if (entry.getValue().isJsonArray()) {
+					/*cur = make2D(new Object[unique.size()], cur, entry.getValue().getAsJsonArray(),
+							path + entry.getKey() + "/");*/
 					cur = make2D(new Object[unique.size()], cur, entry.getValue().getAsJsonArray(),
-							path + entry.getKey() + "/");
+							path +"['" + entry.getKey()+"']");
 				}
 			}
 
@@ -247,9 +324,25 @@ public class JFlat {
 			for (JsonElement tmp : ele.getAsJsonArray()) {
 
 				if (tmp.isJsonPrimitive()) {
-					tmpPath = path + arrIndex;
+					/*tmpPath = path + arrIndex;
 					tmpPath = tmpPath.replaceAll("(\\/\\/[0-9]+)", "/").replaceAll("\\/\\/+", "/");
-					tmpPath = tmpPath.replaceAll("[0-9]+\\/", "");
+					tmpPath = tmpPath.replaceAll("[0-9]+\\/", "");*/
+					
+					tmpPath = path +"['"+ arrIndex +"']";
+					Matcher m = pattern.matcher(tmpPath);
+					// //System.out.println(o);
+					if (m.find()) {
+						////System.out.println(o);
+						////System.out.println(m.group());
+						String tmp1[] = tmpPath.replace("$", "").split("(\\[[0-9]*\\]$)");
+						tmp1[0] = tmp1[0].replaceAll("(\\[[0-9]*\\])", "");
+						tmpPath = ("/" + (tmp1[0] + m.group()).replace("'][", "/").replace("[", "")
+								.replace("]", "").replace("''", "/").replace("'", ""));
+					} else {
+						tmpPath = ("/" + tmpPath.replace("$", "").replaceAll("(\\[[0-9]*\\])", "").replace("[", "")
+								.replace("]", "").replace("''", "/").replace("'", ""));
+					}
+					
 					if (unique.contains(tmpPath)) {
 						int index = unique.indexOf(tmpPath);
 						cur[index] = tmp.getAsJsonPrimitive();
@@ -258,13 +351,15 @@ public class JFlat {
 				} else {
 					if (tmp.isJsonObject()) {
 						gotArray = isInnerArray(tmp);
-						sheetMatrix.add(
-								make2D(new Object[unique.size()], cur, tmp.getAsJsonObject(), path + arrIndex + "/"));
+						/*sheetMatrix.add(
+								make2D(new Object[unique.size()], cur, tmp.getAsJsonObject(), path + arrIndex + "/"));*/
+						sheetMatrix.add(make2D(new Object[unique.size()], cur, tmp.getAsJsonObject(), path +"[" + arrIndex + "]"));
 						if (gotArray) {
 							sheetMatrix.remove(sheetMatrix.size() - 1);
 						}
 					} else if (tmp.isJsonArray()) {
-						make2D(new Object[unique.size()], cur, tmp.getAsJsonArray(), path + arrIndex + "//");
+						/*make2D(new Object[unique.size()], cur, tmp.getAsJsonArray(), path + arrIndex + "//");*/
+						make2D(new Object[unique.size()], cur, tmp.getAsJsonArray(), path+"["+arrIndex+"]");
 					}
 				}
 				arrIndex++;
@@ -307,6 +402,15 @@ public class JFlat {
 	 */
 	public List<Object[]> getJsonAsSheet() {
 		return this.sheetMatrix;
+	}
+
+	/**
+	 * This method returns unique fields of the json
+	 * 
+	 * @return List<String>
+	 */
+	public List<String> getUniqueFields() {
+		return this.unique;
 	}
 
 	/**

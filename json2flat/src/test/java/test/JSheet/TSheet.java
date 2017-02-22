@@ -5,13 +5,12 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 import com.github.opendevl.JFlat;
-import com.github.opendevl.JFlat.fetchMode;
 
 public class TSheet {
 
 	public static void main(String[] args) throws IOException{
 		
-		String source = TSheet.class.getResource("/new.json").getPath();
+		String source = TSheet.class.getResource("/json_school.json").getPath();
 		
 		String destination = TSheet.class.getResource("/json2csv.csv").getPath().split("target")[0]
 				+"src/test/resources"
@@ -19,7 +18,8 @@ public class TSheet {
 		
 		String jsonString = new String(Files.readAllBytes(Paths.get(source)));
 		
-		JFlat flatMe = new JFlat("https://raw.githubusercontent.com/kamalpradhan95/test_repo/master/store.json",fetchMode.URL);
+		//JFlat flatMe = new JFlat("https://raw.githubusercontent.com/kamalpradhan95/test_repo/master/store.json",fetchMode.URL);
+		JFlat flatMe = new JFlat(jsonString);
 		
 		
 		
@@ -36,6 +36,7 @@ public class TSheet {
 		
 		//directly write the JSON document to CSV but with delimiter
 		flatMe.json2Sheet().write2csv("/home/aptus/Desktop/test.csv", ',');
+		//System.out.println(flatMe.json2Sheet().getUniqueFields());
 		
 	}
 }
