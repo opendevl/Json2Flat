@@ -4,9 +4,6 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-import com.github.opendevl.JFlat;
-import com.github.opendevl.JFlat.fetchMode;
-
 public class xyz {
 public static void main(String[] args) throws IOException{
 		
@@ -18,7 +15,7 @@ public static void main(String[] args) throws IOException{
 		
 		String jsonString = new String(Files.readAllBytes(Paths.get(source)));
 		
-		JFlat flatMe = new JFlat(jsonString,fetchMode.FILE);
+		//JFlat flatMe = new JFlat(jsonString,fetchMode.FILE);
 		
 		
 		
@@ -34,7 +31,7 @@ public static void main(String[] args) throws IOException{
 		//flatMe.json2Sheet().write2csv(destination);
 		
 		//directly write the JSON document to CSV but with delimiter
-		flatMe.json2Sheet().write2csv("/home/aptus/Desktop/test.csv", ',');
+		//flatMe.json2Sheet().write2csv("/home/aptus/Desktop/test.csv", ',');
 		
 	}
 }

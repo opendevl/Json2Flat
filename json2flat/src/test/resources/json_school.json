@@ -1,0 +1,252 @@
+[{"location_1":{"type":"Point","coordinates":[149.141327,-35.200461]},"school_name":"Franklin Early Childhood School","sector":"Government","street_address":"Oodgeroo Avenue","suburb":"Franklin","type":"Early Childhood School"}
+,{"location_1":{"type":"Point","coordinates":[149.089497,-35.428716]},"school_name":"Isabella Plains Early Childhood School","sector":"Government","street_address":"Ellerston Avenue","suburb":"Isabella Plains","type":"Early Childhood School"}
+,{"location_1":{"type":"Point","coordinates":[149.076243,-35.341633]},"school_name":"Lyons Early Childhood School","sector":"Government","street_address":"Tarraleah Crescent","suburb":"Lyons","type":"Early Childhood School"}
+,{"location_1":{"type":"Point","coordinates":[149.150698,-35.329016]},"school_name":"Narrabundah Early Childhood School","sector":"Government","street_address":"Kootara Crescent","suburb":"Narrabundah","type":"Early Childhood School"}
+,{"location_1":{"type":"Point","coordinates":[149.120736,-35.261994]},"school_name":"O'Connor Cooperative School","sector":"Government","street_address":"MacPherson Street","suburb":"O'Connor","type":"Early Childhood School"}
+,{"location_1":{"type":"Point","coordinates":[149.038363,-35.232767]},"school_name":"Southern Cross Early Childhood School","sector":"Government","street_address":"Wirraway Crescent","suburb":"Scullin","type":"Early Childhood School"}
+,{"school_name":"Ainslie Preschool","sector":"Government","street_address":"Baker Gardens","suburb":"Ainslie","type":"Preschool"}
+,{"school_name":"Amaroo Preschool","sector":"Government","street_address":"Burdekin Avenue","suburb":"Amaroo","type":"Preschool"}
+,{"school_name":"Aranda Preschool","sector":"Government","street_address":"Gingana Street","suburb":"Aranda","type":"Preschool"}
+,{"school_name":"Bonython Preschool","sector":"Government","street_address":"Hurtle Avenue","suburb":"Bonython","type":"Preschool"}
+,{"school_name":"Calwell Preschool","sector":"Government","street_address":"Casey Crescent","suburb":"Calwell","type":"Preschool"}
+,{"school_name":"Campbell Preschool","sector":"Government","street_address":"Chauvel Street","suburb":"Campbell","type":"Preschool"}
+,{"school_name":"Chapman Preschool","sector":"Government","street_address":"Perry Drive","suburb":"Chapman","type":"Preschool"}
+,{"school_name":"Charles Conder Preschool","sector":"Government","street_address":"Tom Roberts Avenue","suburb":"Conder","type":"Preschool"}
+,{"school_name":"Charnwood-Dunlop Preschool","sector":"Government","street_address":"Bettington Circuit","suburb":"Charnwood","type":"Preschool"}
+,{"school_name":"Chifley Preschool Torrens Primary School","sector":"Government","street_address":"Maclaurin Crescent","suburb":"Chifley","type":"Preschool"}
+,{"school_name":"Chisholm Preschool","sector":"Government","street_address":"Hambidge Street","suburb":"Chisholm","type":"Preschool"}
+,{"school_name":"Curtin North Preschool","sector":"Government","street_address":"Ayers Street","suburb":"Curtin","type":"Preschool"}
+,{"school_name":"Curtin South Preschool","sector":"Government","street_address":"Carruthers Street","suburb":"Curtin","type":"Preschool"}
+,{"school_name":"Deakin Preschool - Forrest Primary School","sector":"Government","street_address":"Hopetoun Street","suburb":"Deakin","type":"Preschool"}
+,{"school_name":"Downer Preschool - Lyneham Primary School","sector":"Government","street_address":"Cotton Street","suburb":"Downer","type":"Preschool"}
+,{"school_name":"Duffy Preschool","sector":"Government","street_address":"Burrinjuck Crescent","suburb":"Duffy ","type":"Preschool"}
+,{"school_name":"Allen Main Memorial Preschool (Duntroon) - Campbell Primary School","sector":"Government","street_address":"Vowles Rd.","suburb":"Duntroon","type":"Preschool"}
+,{"school_name":"Evatt Preschool","sector":"Government","street_address":"Heydon Crescent","suburb":"Evatt","type":"Preschool"}
+,{"school_name":"Fadden Preschool","sector":"Government","street_address":"Hanlon Crescent","suburb":"Fadden","type":"Preschool"}
+,{"school_name":"Farrer Preschool","sector":"Government","street_address":"Longeranong Street","suburb":"Farrer","type":"Preschool"}
+,{"school_name":"Florey Preschool","sector":"Government","street_address":"Ratcliffe Crescent","suburb":"Florey","type":"Preschool"}
+,{"school_name":"Flynn Preschool Mt Rogers Primary School","sector":"Government","street_address":"Hedland Circuit","suburb":"Flynn","type":"Preschool"}
+,{"school_name":"Fraser Preschool","sector":"Government","street_address":"Tillyard Drive","suburb":"Fraser","type":"Preschool"}
+,{"school_name":"Garran Preschool","sector":"Government","street_address":"Robson Street","suburb":"Garran","type":"Preschool"}
+,{"school_name":"Gilmore Preschool","sector":"Government","street_address":"Heagney Crescent","suburb":"Gilmore","type":"Preschool"}
+,{"school_name":"Giralang Preschool","sector":"Government","street_address":"Canopus Crescent","suburb":"Giralang","type":"Preschool"}
+,{"school_name":"Gordon Preschool","sector":"Government","street_address":"Knoke Avenue","suburb":"Gordon","type":"Preschool"}
+,{"school_name":"Gold Creek Preschool","sector":"Government","street_address":"Kelleway Street","suburb":"Nicholls","type":"Preschool"}
+,{"school_name":"Gowrie Preschool","sector":"Government","street_address":"Jeffries Street","suburb":"Gowrie","type":"Preschool"}
+,{"school_name":"Griffith Preschool - Red Hill Primary School","sector":"Government","street_address":"Bannister Gardens","suburb":"Griffith","type":"Preschool"}
+,{"school_name":"Hackett Preschool - North Ainslie Primary School","sector":"Government","street_address":"Mills Street","suburb":"Hackett","type":"Preschool"}
+,{"school_name":"Hall Preschool - Gold Creek School","sector":"Government","street_address":"Hoskin Street","suburb":"Hall","type":"Preschool"}
+,{"school_name":"Harrison Preschool","sector":"Government","street_address":"Nullabor Avenue","suburb":"Harrison","type":"Preschool"}
+,{"school_name":"Hawker Preschool","sector":"Government","street_address":"Kulgera Street","suburb":"Hawker","type":"Preschool"}
+,{"school_name":"Hughes Preschool","sector":"Government","street_address":"Kent Street","suburb":"Hughes","type":"Preschool"}
+,{"school_name":"Isabella Plains Early Childhood School","sector":"Government","street_address":"Ellerston Avenue","suburb":"Isabella Plains","type":"Preschool"}
+,{"school_name":"Jervis Bay Preschool","sector":"Government","street_address":"Jervis Bay","suburb":"ACT 2540","type":"Preschool"}
+,{"school_name":"Kaleen Preschool","sector":"Government","street_address":"Ashburton Circuit","suburb":"Kaleen","type":"Preschool"}
+,{"school_name":"Kingsford Smith Preschool Unit - Kingsford Smith School","sector":"Government","street_address":"Cnr Hardwick Cres and Starke St","suburb":"Holt","type":"Preschool"}
+,{"school_name":"Latham Preschool","sector":"Government","street_address":"Wanless Street","suburb":"Latham","type":"Preschool"}
+,{"school_name":"Lyneham Preschool","sector":"Government","street_address":"Glover Street","suburb":"Lyneham","type":"Preschool"}
+,{"school_name":"Lyons Early Childhood School","sector":"Government","street_address":"Tarraleah Crescent","suburb":"Lyons","type":"Preschool"}
+,{"school_name":"MacGregor Preschool","sector":"Government","street_address":"Code Crescent","suburb":"MacGregor","type":"Preschool"}
+,{"school_name":"Macquarie Preschool","sector":"Government","street_address":"Bennelong Crescent","suburb":"Macquarie","type":"Preschool"}
+,{"school_name":"Maribyrnong Preschool","sector":"Government","street_address":"Alberga Street","suburb":"Kaleen","type":"Preschool"}
+,{"school_name":"Mawson Preschool","sector":"Government","street_address":"Ainsworth Street","suburb":"Mawson","type":"Preschool"}
+,{"school_name":"Melba Preschool - Mt Rogers Primary School","sector":"Government","street_address":"Grainger Circuit","suburb":"Melba","type":"Preschool"}
+,{"school_name":"Miles Franklin Preschool","sector":"Government","street_address":"Alderman Street","suburb":"Evatt","type":"Preschool"}
+,{"school_name":"Monash Preschool","sector":"Government","street_address":"Forwood Street","suburb":"Monash","type":"Preschool"}
+,{"school_name":"Namadgi School - Boddington Site","sector":"Government","street_address":"Boddington Crescent","suburb":"Kambah","type":"Preschool"}
+,{"school_name":"Namadgi School - O'Halloran Site","sector":"Government","street_address":"O'Halloran Circuit","suburb":"Kambah","type":"Preschool"}
+,{"school_name":"Narrabundah Early Childhood School","sector":"Government","street_address":"Kootara Crescent","suburb":"Narrabundah","type":"Preschool"}
+,{"school_name":"Ngunnawal Preschool","sector":"Government","street_address":"Wanganeen Avenue","suburb":"Ngunnawal","type":"Preschool"}
+,{"school_name":"Nicholls Preschool - Gold Creek School","sector":"Government","street_address":"Kellaway Street","suburb":"Nicholls","type":"Preschool"}
+,{"school_name":"North Ainslie Preschool","sector":"Government","street_address":"Sherbrooke Street","suburb":"Ainslie","type":"Preschool"}
+,{"school_name":"O'Connor Cooperative School","sector":"Government","street_address":"Macpherson Street","suburb":"O'Connor","type":"Preschool"}
+,{"school_name":"Palmerston Preschool","sector":"Government","street_address":"Koszciusko Avenue","suburb":"Palmerston","type":"Preschool"}
+,{"school_name":"Pearce Preschool -  Torrens Primary School","sector":"Government","street_address":"Pendred Street","suburb":"Pearce","type":"Preschool"}
+,{"school_name":"Red Hill Preschool","sector":"Government","street_address":"Astrolabe Street","suburb":"Red Hill","type":"Preschool"}
+,{"school_name":"Reid Preschool","sector":"Government","street_address":"Dirrawan Gardens","suburb":"Reid","type":"Preschool"}
+,{"school_name":"Richardson Preschool","sector":"Government","street_address":"May Gibbs Close","suburb":"Richardson","type":"Preschool"}
+,{"school_name":"Spence Preschool - Mt Rogers Primary School","sector":"Government","street_address":"Baddeley Crescent","suburb":"Spence","type":"Preschool"}
+,{"school_name":"Southern Cross Early Childhood School","sector":"Government","street_address":"Wirraway Crescent","suburb":"Scullin","type":"Preschool"}
+,{"school_name":"Taylor Preschool","sector":"Government","street_address":"Marconi Crescent","suburb":"Kambah","type":"Preschool"}
+,{"school_name":"Tharwa Preschool - Charles Conder Primary School","sector":"Government","street_address":"Tharwa","suburb":"ACT 2620","type":"Preschool"}
+,{"school_name":"Theodore Preschool","sector":"Government","street_address":"Lawrence Wackett Crescent","suburb":"Theodore","type":"Preschool"}
+,{"school_name":"Torrens Preschool","sector":"Government","street_address":"Parsons Street","suburb":"Torrens","type":"Preschool"}
+,{"school_name":"Turner Preschool","sector":"Government","street_address":"Hartley Street","suburb":"Turner","type":"Preschool"}
+,{"school_name":"Wanniassa Hills Preschool","sector":"Government","street_address":"Langdon Avenue","suburb":"Wanniassa","type":"Preschool"}
+,{"school_name":"Wanniassa Preschool","sector":"Government","street_address":"Sternberg Crescent","suburb":"Wanniassa","type":"Preschool"}
+,{"school_name":"Waramanga Preschool - Arawang Primary School","sector":"Government","street_address":"Nemarang Crescent","suburb":"Waramanga","type":"Preschool"}
+,{"school_name":"Watson Preschool - Majura Primary School","sector":"Government","street_address":"Knox Street","suburb":"Watson","type":"Preschool"}
+,{"school_name":"Weetangera Preschool","sector":"Government","street_address":"Southwell Street","suburb":"Weetangera","type":"Preschool"}
+,{"school_name":"Weston Preschool - Arawang Primary School","sector":"Government","street_address":"Minns Place","suburb":"Weston","type":"Preschool"}
+,{"school_name":"Yarralumla Preschool Villa","sector":"Government","street_address":" Loftus Street","suburb":"Yarralumla","type":"Preschool"}
+,{"school_name":"Yarralumla Montessori Villa School","sector":"Government","street_address":"Loftus Street","suburb":"Yarralumla","type":"Preschool"}
+,{"location_1":{"type":"Point","coordinates":[149.129705,-35.163986]},"school_name":"Amaroo School","sector":"Government","street_address":"Katherine Avenue","suburb":"Amaroo","type":"Preschool to Year 10"}
+,{"location_1":{"type":"Point","coordinates":[149.122047,-35.418155]},"school_name":"Caroline Chisholm School","sector":"Government","street_address":"Hambidge Crescent","suburb":"Chisholm","type":"Preschool to Year 10"}
+,{"location_1":{"type":"Point","coordinates":[149.100262,-35.181275]},"school_name":"Gold Creek School","sector":"Government","street_address":"Kelleway Street","suburb":"Nicholls","type":"Preschool to Year 10"}
+,{"location_1":{"type":"Point","coordinates":[149.021001,-35.227532]},"school_name":"Kingsford Smith School","sector":"Government","street_address":"Cnr Hardwick Cres and Starke St","suburb":"Holt","type":"Preschool to Year 10"}
+,{"location_1":{"type":"Point","coordinates":[149.064431,-35.393842]},"school_name":"Namadgi School","sector":"Government","street_address":"O'Halloran Circuit","suburb":"Kambah","type":"Preschool to Year 10"}
+,{"location_1":{"type":"Point","coordinates":[149.086363,-35.394992]},"school_name":"Wanniassa School","sector":"Government","street_address":"Sternberg Crescent","suburb":"Wanniassa","type":"Preschool to Year 10"}
+,{"location_1":{"type":"Point","coordinates":[149.088676,-35.340387]},"school_name":"Canberra College","sector":"Government","street_address":"Launceston Street","suburb":"Phillip","type":"Colleges Year 11-12"}
+,{"location_1":{"type":"Point","coordinates":[149.153,-35.249]},"school_name":"Dickson College","sector":"Government","street_address":"Phillip Avenue","suburb":"Dickson","type":"Colleges Year 11-12"}
+,{"location_1":{"type":"Point","coordinates":[149.09717,-35.403008]},"school_name":"Erindale College","sector":"Government","street_address":"McBryde Crescent","suburb":"Wanniassa","type":"Colleges Year 11-12"}
+,{"location_1":{"type":"Point","coordinates":[149.131357,-35.185515]},"school_name":"Gungahlin College","sector":"Government","street_address":"Gozzard Street","suburb":"Gungahlin","type":"Colleges Year 11-12"}
+,{"location_1":{"type":"Point","coordinates":[149.033634,-35.245207]},"school_name":"Hawker College","sector":"Government","street_address":"Murranji Street","suburb":"Hawker","type":"Colleges Year 11-12"}
+,{"location_1":{"type":"Point","coordinates":[149.073894,-35.238771]},"school_name":"University of Canberra - Senior Secondary College Lake Ginninderra","sector":"Government","street_address":"Emu Bank","suburb":"Belconnen","type":"Colleges Year 11-12"}
+,{"location_1":{"type":"Point","coordinates":[149.067934,-35.4132]},"school_name":"Lake Tuggeranong College","sector":"Government","street_address":"Cowlishaw Street","suburb":"Tuggeranong","type":"Colleges Year 11-12"}
+,{"location_1":{"type":"Point","coordinates":[149.059163,-35.212194]},"school_name":"Melba Copland Secondary School - Copland Campus Years 11 - 12","sector":"Government","street_address":"Copland Drive","suburb":"Melba","type":"Colleges Year 11-12"}
+,{"location_1":{"type":"Point","coordinates":[149.147301,-35.336028]},"school_name":"Narrabundah College","sector":"Government","street_address":"Jerrabomberra Avenue","suburb":"Narrabundah","type":"Colleges Year 11-12"}
+,{"location_1":{"type":"Point","coordinates":[149.139632,-35.273729]},"school_name":"Ainslie School","sector":"Government","street_address":"Donaldson Street","suburb":"Braddon","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.145509,-35.254797]},"school_name":"Ainslie North Primary","sector":"Government","street_address":"Majura Avenue","suburb":"Ainslie","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.129705,-35.163986]},"school_name":"Amaroo School","sector":"Government","street_address":"Katherine Avenue","suburb":"Amaroo","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.079914,-35.255999]},"school_name":"Aranda Primary","sector":"Government","street_address":"Banambila Crescent","suburb":"Aranda","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.059719,-35.355017]},"school_name":"Arawang Primary","sector":"Government","street_address":"Nemarang Crescent","suburb":"Waramanga","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.082604,-35.431846]},"school_name":"Bonython Primary","sector":"Government","street_address":"Hurtle Avenue","suburb":"Bonython","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.109254,-35.438412]},"school_name":"Calwell Primary","sector":"Government","street_address":"Casey Crescent","suburb":"Calwell","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.156099,-35.290271]},"school_name":"Campbell Primary","sector":"Government","street_address":"Chauvel Street","suburb":"Campbell","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.043079,-35.356878]},"school_name":"Chapman Primary","sector":"Government","street_address":"Perry Drive","suburb":"Chapman","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.098449,-35.464883]},"school_name":"Charles Conder Primary","sector":"Government","street_address":"Tom Roberts Avenue","suburb":"Conder","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.042848,-35.322603]},"school_name":"Charles Weston School","sector":"Government","street_address":"Woodberry Avenue","suburb":"Coombs","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.036203,-35.198682]},"school_name":"Charnwood-Dunlop School","sector":"Government","street_address":"Bettington Circuit","suburb":"Charnwood","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.122047,-35.418155]},"school_name":"Caroline Chisholm Primary","sector":"Government","street_address":"Hambidge Crescent","suburb":"Chisholm","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.079926,-35.331662]},"school_name":"Curtin Primary","sector":"Government","street_address":"Theodore Street","suburb":"Curtin","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.033656,-35.334219]},"school_name":"Duffy Primary","sector":"Government","street_address":"Burrinjuck Crescent","suburb":"Duffy","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.075906,-35.20707]},"school_name":"Evatt Primary","sector":"Government","street_address":"Heydon Crescent","suburb":"Evatt","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.118175,-35.404286]},"school_name":"Fadden Primary","sector":"Government","street_address":"Hanlon Crescent","suburb":"Fadden","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.107114,-35.378739]},"school_name":"Farrer Primary","sector":"Government","street_address":"Lambrigg Street","suburb":"Farrer","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.052092,-35.226519]},"school_name":"Florey Primary","sector":"Government","street_address":"Ratcliffe Crescent","suburb":"Florey","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.126171,-35.315084]},"school_name":"Forrest Primary","sector":"Government","street_address":"National Circuit","suburb":"Forrest","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.141327,-35.200461]},"school_name":"Franklin Early Childhood School","sector":"Government","street_address":"Oodgeroo Avenue","suburb":"Franklin","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.043375,-35.191795]},"school_name":"Fraser Primary","sector":"Government","street_address":"Tillyard Drive","suburb":"Fraser","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.103287,-35.344681]},"school_name":"Garran Primary","sector":"Government","street_address":"Gilmore Crescent","suburb":"Garran","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.135582,-35.419488]},"school_name":"Gilmore Primary","sector":"Government","street_address":"Heagney Crescent","suburb":"Gilmore","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.094449,-35.213717]},"school_name":"Giralang Primary","sector":"Government","street_address":"Canopus Crescent","suburb":"Giralang","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.100262,-35.181275]},"school_name":"Gold Creek School","sector":"Government","street_address":"Kelleway Street","suburb":"Nicholls","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.086978,-35.455517]},"school_name":"Gordon Primary","sector":"Government","street_address":"Knoke Avenue","suburb":"Gordon","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.110565,-35.413608]},"school_name":"Gowrie Primary","sector":"Government","street_address":"Jeffries Street","suburb":"Gowrie","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.034593,-35.250284]},"school_name":"Hawker Primary","sector":"Government","street_address":"Erldunda Cicuit","suburb":"Hawker","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.093456,-35.332248]},"school_name":"Hughes Primary","sector":"Government","street_address":"Kent Street","suburb":"Hughes","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.089497,-35.428716]},"school_name":"Isabella Plains Early Childhood School","sector":"Government","street_address":"Ellerston Avenue","suburb":"Isabella Plains","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[150.703614,-35.135012]},"school_name":"Jervis Bay Primary","sector":"Government","street_address":"Jervis Bay","suburb":"ACT 2540","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.11404,-35.224835]},"school_name":"Kaleen Primary","sector":"Government","street_address":"Ashburton Circuit","suburb":"Kaleen","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.023361,-35.226971]},"school_name":"Kingsford Smith School","sector":"Government","street_address":"Cnr Hardwick Cres and Starke St","suburb":"Holt","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.034298,-35.220157]},"school_name":"Latham Primary","sector":"Government","street_address":"O'Loghlen Street","suburb":"Latham","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.124974,-35.25148]},"school_name":"Lyneham Primary","sector":"Government","street_address":"Hall Street","suburb":"Lyneham","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.076243,-35.341633]},"school_name":"Lyons Early Childhood School","sector":"Government","street_address":"Tarraleah Crescent","suburb":"Lyons","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.012349,-35.213112]},"school_name":"Macgregor Primary","sector":"Government","street_address":"Hirschfeld Crescent","suburb":"MacGregor","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.059393,-35.250069]},"school_name":"Macquarie Primary","sector":"Government","street_address":"Bennelong Crescent","suburb":"Macquarie","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.15501,-35.238509]},"school_name":"Majura Primary","sector":"Government","street_address":"Knox Street","suburb":"Watson","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.102261,-35.235115]},"school_name":"Maribyrnong Primary","sector":"Government","street_address":"Alberga Street","suburb":"Kaleen","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.097655,-35.358505]},"school_name":"Mawson Primary","sector":"Government","street_address":"Ainsworth Street","suburb":"Mawson","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.066961,-35.213295]},"school_name":"Miles Franklin Primary","sector":"Government","street_address":"Alderman Street","suburb":"Evatt","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.089411,-35.414879]},"school_name":"Monash Primary","sector":"Government","street_address":"Corlette Crescent","suburb":"Monash","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.055621,-35.208737]},"school_name":"Mount Rogers Primary School","sector":"Government","street_address":"Alfred Hill Drive","suburb":"Melba","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.064431,-35.393842]},"school_name":"Namadgi School","sector":"Government","street_address":"O'Halloran Circuit","suburb":"Kambah","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.150698,-35.329016]},"school_name":"Narrabundah Early Childhood School","sector":"Government","street_address":"Kootara Crescent","suburb":"Narrabundah","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.139812,-35.161141]},"school_name":"Neville Bonner Primary School","sector":"Government","street_address":"Mabo Boulevard","suburb":"Bonner","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.111784,-35.169196]},"school_name":"Ngunnawal Primary","sector":"Government","street_address":"Unaipon Crescent","suburb":"Ngunnawal","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.120736,-35.261994]},"school_name":"O'Connor Cooperative School","sector":"Government","street_address":"MacPherson Street","suburb":"O'Connor","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.120303,-35.1975]},"school_name":"Palmerston District Primary","sector":"Government","street_address":"Kosciusko Avenue","suburb":"Palmerston","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.132893,-35.339741]},"school_name":"Red Hill Primary","sector":"Government","street_address":"Astrolabe Street","suburb":"Red Hill","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.113943,-35.428859]},"school_name":"Richardson Primary","sector":"Government","street_address":"May Gibbs Close","suburb":"Richardson","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.038363,-35.232767]},"school_name":"Southern Cross Early Childhood School","sector":"Government","street_address":"Wirraway Crescent","suburb":"Scullin","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.064261,-35.378318]},"school_name":"Taylor Primary","sector":"Government","street_address":"Marconi Crescent","suburb":"Kambah","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.134385,-35.313804]},"school_name":"Telopea Park School","sector":"Government","street_address":"New South Wales Crescent","suburb":"Barton","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.12396,-35.447667]},"school_name":"Theodore Primary","sector":"Government","street_address":"Lawrence-Wackett Crescent","suburb":"Theodore","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.090949,-35.370046]},"school_name":"Torrens Primary","sector":"Government","street_address":"Ritchie Street","suburb":"Torrens","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.126081,-35.264995]},"school_name":"Turner School","sector":"Government","street_address":"Condamine Street","suburb":"Turner","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.095898,-35.393069]},"school_name":"Wanniassa Hills Primary","sector":"Government","street_address":"Langdon Avenue","suburb":"Wanniassa","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.086363,-35.394992]},"school_name":"Wanniassa School","sector":"Government","street_address":"Sternberg Crescent","suburb":"Wanniassa","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.047137,-35.251826]},"school_name":"Weetangera Primary","sector":"Government","street_address":"Southwell Street","suburb":"Weetangera","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.103234,-35.306948]},"school_name":"Yarralumla Primary","sector":"Government","street_address":"Loftus Street","suburb":"Yarralumla","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.094282,-35.323849]},"school_name":"Alfred Deakin High","sector":"Government","street_address":"Denison Street","suburb":"Deakin","type":"High School"}
+,{"location_1":{"type":"Point","coordinates":[149.129705,-35.163986]},"school_name":"Amaroo School","sector":"Government","street_address":"Katherine Avenue","suburb":"Amaroo","type":"High School"}
+,{"location_1":{"type":"Point","coordinates":[149.039298,-35.246957]},"school_name":"Belconnen High","sector":"Government","street_address":"Murranji Street","suburb":"Hawker","type":"High School"}
+,{"location_1":{"type":"Point","coordinates":[149.117635,-35.441052]},"school_name":"Calwell High","sector":"Government","street_address":"Casey Crescent","suburb":"Calwell","type":"High School"}
+,{"location_1":{"type":"Point","coordinates":[149.147123,-35.278101]},"school_name":"Campbell High","sector":"Government","street_address":"Treloar Crescent","suburb":"Campbell","type":"High School"}
+,{"location_1":{"type":"Point","coordinates":[149.074517,-35.251302]},"school_name":"Canberra High","sector":"Government","street_address":"Bindubi Street","suburb":"Macquarie","type":"High School"}
+,{"location_1":{"type":"Point","coordinates":[149.122047,-35.418155]},"school_name":"Caroline Chisholm School","sector":"Government","street_address":"Hambidge Crescent","suburb":"Chisholm","type":"High School"}
+,{"location_1":{"type":"Point","coordinates":[149.100262,-35.181275]},"school_name":"Gold Creek School","sector":"Government","street_address":"Kelleway Street","suburb":"Nicholls","type":"High School"}
+,{"location_1":{"type":"Point","coordinates":[149.1012,-35.225083]},"school_name":"University of Canberra High School - Kaleen","sector":"Government","street_address":"Baldwin Drive","suburb":"Kaleen","type":"High School"}
+,{"location_1":{"type":"Point","coordinates":[149.021001,-35.227532]},"school_name":"Kingsford Smith School","sector":"Government","street_address":"Cnr Hardwick Cres and Starke St","suburb":"Holt","type":"High School"}
+,{"location_1":{"type":"Point","coordinates":[149.09507,-35.460389]},"school_name":"Lanyon High","sector":"Government","street_address":"Heidelberg Street","suburb":"Conder","type":"High School"}
+,{"location_1":{"type":"Point","coordinates":[149.130653,-35.252379]},"school_name":"Lyneham High","sector":"Government","street_address":"Goodwin Street","suburb":"Lyneham","type":"High School"}
+,{"location_1":{"type":"Point","coordinates":[149.059794,-35.21254]},"school_name":"Melba Copland Secondary School","sector":"Government","street_address":"Conley Drive","suburb":"Melba","type":"High School"}
+,{"location_1":{"type":"Point","coordinates":[149.089434,-35.363475]},"school_name":"Melrose High","sector":"Government","street_address":"Marr Street","suburb":"Pearce","type":"High School"}
+,{"location_1":{"type":"Point","coordinates":[149.05436,-35.355429]},"school_name":"Mount Stromlo High School","sector":"Government","street_address":"Badimara Street","suburb":"Waramanga","type":"High School"}
+,{"location_1":{"type":"Point","coordinates":[149.064431,-35.393842]},"school_name":"Namadgi School","sector":"Government","street_address":"O'Halloran Circuit","suburb":"Kambah","type":"High School"}
+,{"location_1":{"type":"Point","coordinates":[149.134385,-35.313804]},"school_name":"Telopea Park School","sector":"Government","street_address":"New South Wales Crescent","suburb":"Barton","type":"High School"}
+,{"location_1":{"type":"Point","coordinates":[149.085588,-35.395277]},"school_name":"Wanniassa School","sector":"Government","street_address":"Wheeler Crescent","suburb":"Wanniassa","type":"High School"}
+,{"location_1":{"type":"Point","coordinates":[149.154143,-35.248452]},"school_name":"Alternative Education Program/Dickson College","sector":"Government","street_address":"Phillip Avenue","suburb":"Dickson","type":"Specialist School/Education Centre"}
+,{"location_1":{"type":"Point","coordinates":[149.049754,-35.350801]},"school_name":"Alternative Education Program/Canberra College","sector":"Government","street_address":"Fremantle Drive","suburb":"Stirling","type":"Specialist School/Education Centre"}
+,{"location_1":{"type":"Point","coordinates":[148.959975,-35.444729]},"school_name":"Birrigai Outdoor School","sector":"Government","street_address":"Tidbinbilla Road","suburb":"Tharwa","type":"Specialist School/Education Centre"}
+,{"location_1":{"type":"Point","coordinates":[149.112366,-35.265224]},"school_name":"Black Mountain  School","sector":"Government","street_address":"Dryandra Street","suburb":"O'Connor","type":"Specialist School/Education Centre"}
+,{"location_1":{"type":"Point","coordinates":[149.02911,-35.224913]},"school_name":"Cranleigh School","sector":"Government","street_address":"Starke Street","suburb":"Holt","type":"Specialist School/Education Centre"}
+,{"location_1":{"type":"Point","coordinates":[149.10078,-35.34513]},"school_name":"Hospital School (The)/Canberra Hospital","sector":"Government","street_address":"Yamba Drive","suburb":"Garran","type":"Specialist School/Education Centre"}
+,{"location_1":{"type":"Point","coordinates":[149.1012,-35.225083]},"school_name":"Instrumental Music Program c/o Kaleen High School","sector":"Government","street_address":"Baldwin Drive","suburb":"Kaleen","type":"Specialist School/Education Centre"}
+,{"location_1":{"type":"Point","coordinates":[149.09402,-35.337447]},"school_name":"Malkara School","sector":"Government","street_address":"Wisdom Street","suburb":"Garran","type":"Specialist School/Education Centre"}
+,{"location_1":{"type":"Point","coordinates":[149.089434,-35.363475]},"school_name":"Melrose Guidance and Counselling Service/Melrose HS","sector":"Government","street_address":"Marr Street","suburb":"Pearce","type":"Specialist School/Education Centre"}
+,{"location_1":{"type":"Point","coordinates":[149.126081,-35.264995]},"school_name":"Turner Early Childhood Centre","sector":"Government","street_address":"Condamine Street","suburb":"Turner","type":"Specialist School/Education Centre"}
+,{"location_1":{"type":"Point","coordinates":[149.092398,-35.326599]},"school_name":"Woden School (The)","sector":"Government","street_address":"Denison Street","suburb":"Deakin","type":"Specialist School/Education Centre"}
+,{"location_1":{"type":"Point","coordinates":[149.145509,-35.254797]},"school_name":"Northside Primary Introductory English Centre (at North Ainslie Primary School)","sector":"Government","street_address":"Majura Avenue","suburb":"Ainslie","type":"Introductory English Centre"}
+,{"location_1":{"type":"Point","coordinates":[149.093456,-35.332248]},"school_name":"Southside Primary Introductory English Centre (at Hughes Primary School)","sector":"Government","street_address":"Kent Street","suburb":"Hughes","type":"Introductory English Centre"}
+,{"location_1":{"type":"Point","coordinates":[149.153,-35.249]},"school_name":"Secondary Introductory English Centre (at Dickson College)","sector":"Government","street_address":"Phillip Avenue","suburb":"Dickson","type":"Introductory English Centre"}
+,{"location_1":{"type":"Point","coordinates":[149.03622,-35.19876]},"school_name":"Belconnen Primary Introductory English Centre (at Charnwood Dunlop Primary School)","sector":"Government","street_address":"Bettington Circuit","suburb":"Charnwood","type":"Introductory English Centre"}
+,{"location_1":{"type":"Point","coordinates":[149.09216,-35.39282]},"school_name":"Tuggeranong Introductory English Centre (at Wanniassa Hills Primary School)","sector":"Government","street_address":"Langdon Avenue","suburb":"Wanniassa","type":"Introductory English Centre"}
+,{"location_1":{"type":"Point","coordinates":[149.120303,-35.1975]},"school_name":"Gungahlin Primary Introductory English Centre (at Palmerston District Primary School)","sector":"Government","street_address":"Kosciuszko Avenue","suburb":"Palmerston","type":"Introductory English Centre"}
+,{"location_1":{"type":"Point","coordinates":[149.162514,-35.249947]},"school_name":"Blue Gum Community School","sector":"Non-Government","street_address":"Maitland Street","suburb":"Hackett","type":"Independent Community"}
+,{"location_1":{"type":"Point","coordinates":[149.127639,-35.249003]},"school_name":"Brindabella Christian College - Lyneham Campus","sector":"Non-Government","street_address":"Brigalow Street","suburb":"Lyneham","type":"Independent Christian"}
+,{"school_name":"Brindabella Christian College - Charnwood campus","sector":"Non-Government","street_address":"Lhotsky Street","suburb":"Charnwood","type":"Independent Christian"}
+,{"location_1":{"type":"Point","coordinates":[149.123672,-35.188529]},"school_name":"Burgmann Anglican School - Valley Campus","sector":"Non-Government","street_address":"Cnr Gungahlin Drive & The Valley Avenue","suburb":"Gungahlin","type":"Independent Anglican"}
+,{"school_name":"Burgmann Anglican School - Ford Campus","sector":"Non-Government","street_address":"Cnr Francis Forde Boulevarde & Hurrell Street","suburb":"Forde","type":"Independent Anglican"}
+,{"location_1":{"type":"Point","coordinates":[149.097963,-35.356475]},"school_name":"Canberra Christian School","sector":"Non-Government","street_address":"Ainsworth Street","suburb":"Mawson","type":"Independent Christian"}
+,{"location_1":{"type":"Point","coordinates":[149.115115,-35.31699]},"school_name":"Canberra Girls' Grammar School","sector":"Non-Government","street_address":"Melbourne Avenue","suburb":"Deakin","type":"Independent Anglican"}
+,{"location_1":{"type":"Point","coordinates":[149.110759,-35.312126]},"school_name":"Canberra Girls' Grammar School - Junior school campus","sector":"Non-Government","street_address":"Grey Street","suburb":"Deakin","type":"Independent Anglican"}
+,{"location_1":{"type":"Point","coordinates":[149.124674,-35.330919]},"school_name":"Canberra Grammar School","sector":"Non-Government","street_address":"Monaro Crescent","suburb":"Red Hill","type":"Independent Anglican"}
+,{"location_1":{"type":"Point","coordinates":[149.124691,-35.332344]},"school_name":"Canberra Grammar School - Junior school campus","sector":"Non-Government","street_address":"Alexander Street","suburb":"Red Hill","type":"Independent Anglican"}
+,{"location_1":{"type":"Point","coordinates":[149.124691,-35.332344]},"school_name":"Canberra Grammar School - Southside - early childhood campus","sector":"Non-Government","street_address":"Alexander Street","suburb":"Red Hill","type":"Independent Anglican"}
+,{"location_1":{"type":"Point","coordinates":[149.147091,-35.285316]},"school_name":"Canberra Grammar School - Northside - early childhood campus","sector":"Non-Government","street_address":"Blamey Crescent","suburb":"Campbell","type":"Independent Anglican"}
+,{"location_1":{"type":"Point","coordinates":[149.051068,-35.332247]},"school_name":"Canberra Montessori School","sector":"Non-Government","street_address":"Mulley Street","suburb":"Holder","type":"Independent Montessori"}
+,{"location_1":{"type":"Point","coordinates":[149.090709,-35.439222]},"school_name":"Covenant Christian School","sector":"Non-Government","street_address":"Woodcock Drive","suburb":"Gordon","type":"Independent Christian"}
+,{"location_1":{"type":"Point","coordinates":[149.138695,-35.253518]},"school_name":"Daramalan College","sector":"Non-Government","street_address":"Cowper Street","suburb":"Dickson","type":"Independent Catholic"}
+,{"location_1":{"type":"Point","coordinates":[149.142818,-35.253355]},"school_name":"Emmaus Christian School","sector":"Non-Government","street_address":"Davenport Street","suburb":"Dickson","type":"Independent Christian"}
+,{"location_1":{"type":"Point","coordinates":[149.123922,-35.166843]},"school_name":"Good Shepherd Primary School","sector":"Non-Government","street_address":"Burdekin Avenue","suburb":"Amaroo","type":"Catholic systemic"}
+,{"school_name":"Mother Teresa - campus of Good Shepherd","sector":"Non-Government","street_address":"Wimmera St","suburb":"Harrison","type":"Catholic systemic"}
+,{"school_name":"St John Paul II College - secondary campus of Good Shepherd","sector":"Non-Government","street_address":"Gungahlin Drive","suburb":"Nicholls","type":"Catholic systemic"}
+,{"location_1":{"type":"Point","coordinates":[149.116552,-35.410301]},"school_name":"Holy Family Parish Primary","sector":"Non-Government","street_address":"Castleton Crescent","suburb":"Gowrie","type":"Catholic systemic"}
+,{"location_1":{"type":"Point","coordinates":[149.101809,-35.180246]},"school_name":"Holy Spirit Primary","sector":"Non-Government","street_address":"Kelleway Avenue","suburb":"Nicholls","type":"Catholic systemic"}
+,{"location_1":{"type":"Point","coordinates":[149.081951,-35.327679]},"school_name":"Holy Trinity Primary","sector":"Non-Government","street_address":"Theodore Street","suburb":"Curtin","type":"Catholic systemic"}
+,{"location_1":{"type":"Point","coordinates":[149.15037,-35.240588]},"school_name":"Islamic School of Canberra","sector":"Non-Government","street_address":"Heysen Street","suburb":"Weston","type":"Independent Islamic"}
+,{"location_1":{"type":"Point","coordinates":[149.088697,-35.357959]},"school_name":"Marist College Canberra","sector":"Non-Government","street_address":"Marr Street","suburb":"Pearce","type":"Independent Islamic"}
+,{"location_1":{"type":"Point","coordinates":[149.137037,-35.266525]},"school_name":"Merici College","sector":"Non-Government","street_address":"Wise Street","suburb":"Braddon","type":"Catholic systemic"}
+,{"location_1":{"type":"Point","coordinates":[149.058949,-35.327858]},"school_name":"Orana Steiner School","sector":"Non-Government","street_address":"Unwin Place","suburb":"Weston","type":"Independent Steiner"}
+,{"location_1":{"type":"Point","coordinates":[149.089323,-35.243503]},"school_name":"Radford College","sector":"Non-Government","street_address":"College Street","suburb":"Bruce","type":"Independent Anglican"}
+,{"location_1":{"type":"Point","coordinates":[149.154682,-35.24641]},"school_name":"Rosary Primary","sector":"Non-Government","street_address":"Fleming Street","suburb":"Watson","type":"Catholic systemic"}
+,{"location_1":{"type":"Point","coordinates":[149.084391,-35.366936]},"school_name":"Sacred Heart Primary","sector":"Non-Government","street_address":"Murphy Street","suburb":"Pearce","type":"Catholic systemic"}
+,{"location_1":{"type":"Point","coordinates":[149.080086,-35.394049]},"school_name":"St Anthony's Primary","sector":"Non-Government","street_address":"Wheeler Crescent","suburb":"Wanniassa","type":"Catholic systemic"}
+,{"location_1":{"type":"Point","coordinates":[149.128788,-35.338847]},"school_name":"St Bede's Primary","sector":"Non-Government","street_address":"Nuyts Street","suburb":"Red Hill","type":"Catholic systemic"}
+,{"location_1":{"type":"Point","coordinates":[149.148034,-35.33483]},"school_name":"St Benedict's Primary","sector":"Non-Government","street_address":"Tallara Parkway","suburb":"Narrabundah","type":"Catholic systemic"}
+,{"location_1":{"type":"Point","coordinates":[149.096766,-35.45791]},"school_name":"St Clare of Assisi Primary","sector":"Non-Government","street_address":"Heidelberg Street","suburb":"Conder","type":"Catholic systemic"}
+,{"location_1":{"type":"Point","coordinates":[149.14765,-35.323929]},"school_name":"St Clare's College","sector":"Non-Government","street_address":"McMillan Crescent","suburb":"Griffith","type":"Catholic systemic"}
+,{"location_1":{"type":"Point","coordinates":[149.144242,-35.32282]},"school_name":"St Edmund's College","sector":"Non-Government","street_address":"Canberra Avenue","suburb":"Griffith","type":"Independent Catholic"}
+,{"location_1":{"type":"Point","coordinates":[149.119593,-35.440799]},"school_name":"St Francis of Assisi Primary","sector":"Non-Government","street_address":"Casey Crescent","suburb":"Calwell","type":"Catholic systemic"}
+,{"location_1":{"type":"Point","coordinates":[149.040615,-35.223979]},"school_name":"St Francis Xavier College","sector":"Non-Government","street_address":"Barnard Circuit","suburb":"Florey","type":"Catholic systemic"}
+,{"location_1":{"type":"Point","coordinates":[149.041696,-35.225664]},"school_name":"St John the Apostle Primary","sector":"Non-Government","street_address":"Pawsey Circuit","suburb":"Florey","type":"Catholic systemic"}
+,{"location_1":{"type":"Point","coordinates":[149.055559,-35.351057]},"school_name":"St John Vianney's Primary","sector":"Non-Government","street_address":"Namatjira Drive","suburb":"Waramanga","type":"Catholic systemic"}
+,{"location_1":{"type":"Point","coordinates":[149.126375,-35.259648]},"school_name":"St Joseph's Primary","sector":"Non-Government","street_address":"Boronia Drive","suburb":"O'Connor","type":"Catholic systemic"}
+,{"location_1":{"type":"Point","coordinates":[149.049819,-35.333941]},"school_name":"St Jude's Primary","sector":"Non-Government","street_address":"Mulley Street","suburb":"Holder","type":"Catholic systemic"}
+,{"location_1":{"type":"Point","coordinates":[149.089258,-35.404923]},"school_name":"St Mary MacKillop College - Isabella Plains Campus","sector":"Non-Government","street_address":"Ellerston Avenue","suburb":"Isabella Plains","type":"Catholic systemic"}
+,{"location_1":{"type":"Point","coordinates":[149.089258,-35.404923]},"school_name":"St Mary MacKillop College - Wanniassa Campus","sector":"Non-Government","street_address":"Mackinnon Street","suburb":"Wanniassa","type":"Catholic systemic"}
+,{"location_1":{"type":"Point","coordinates":[149.041555,-35.240755]},"school_name":"St Matthew's Primary","sector":"Non-Government","street_address":"Stutchbury Street","suburb":"Page","type":"Catholic systemic"}
+,{"location_1":{"type":"Point","coordinates":[149.109707,-35.223474]},"school_name":"St Michael's Primary","sector":"Non-Government","street_address":"Tyrell Circuit","suburb":"Kaleen","type":"Catholic systemic"}
+,{"location_1":{"type":"Point","coordinates":[149.061289,-35.213525]},"school_name":"St Monica's Primary","sector":"Non-Government","street_address":"Moynihan Street","suburb":"Evatt","type":"Catholic systemic"}
+,{"location_1":{"type":"Point","coordinates":[149.092732,-35.339376]},"school_name":"St's Peter & Paul","sector":"Non-Government","street_address":"Wisdom Street","suburb":"Garran","type":"Catholic systemic"}
+,{"location_1":{"type":"Point","coordinates":[149.029638,-35.205121]},"school_name":"St Thomas Aquinas Primary","sector":"Non-Government","street_address":"Lhotsky Street","suburb":"Charnwood","type":"Catholic systemic"}
+,{"location_1":{"type":"Point","coordinates":[149.156836,-35.286717]},"school_name":"St Thomas More's Primary","sector":"Non-Government","street_address":"White Crescent","suburb":"Campbell","type":"Catholic systemic"}
+,{"location_1":{"type":"Point","coordinates":[149.051977,-35.382449]},"school_name":"St Thomas the Apostle Primary","sector":"Non-Government","street_address":"Boddington Crescent","suburb":"Kambah","type":"Catholic systemic"}
+,{"location_1":{"type":"Point","coordinates":[149.076661,-35.254993]},"school_name":"St Vincent's Primary","sector":"Non-Government","street_address":"Bindel Street","suburb":"Aranda","type":"Catholic systemic"}
+,{"school_name":"Taqwa School","sector":"Non-Government","street_address":"Crofts Crescent","suburb":"Spence","type":"Independent Islamic"}
+,{"location_1":{"type":"Point","coordinates":[149.035968,-35.380778]},"school_name":"The Galilee School","sector":"Non-Government","street_address":"PO Box 1066","suburb":"Tuggeranong","type":"Independent Special Assistance School"}
+,{"location_1":{"type":"Point","coordinates":[149.086051,-35.408265]},"school_name":"Trinity Christian School","sector":"Non-Government","street_address":"McBryde Crescent","suburb":"Wanniassa","type":"Independent Christian"}
+,{"location_1":{"type":"Point","coordinates":[149.15164,-35.197531]},"school_name":"Harrison School","sector":"Government","street_address":"Nullabor Avenue","suburb":"Harrison","type":"High School"}
+,{"location_1":{"type":"Point","coordinates":[149.15164,-35.197531]},"school_name":"Harrison School","sector":"Government","street_address":"Nullabor Avenue","suburb":"Harrison","type":"Primary School"}
+,{"location_1":{"type":"Point","coordinates":[149.151642,-35.197531]},"school_name":"Harrison School","sector":"Government","street_address":"Wimmera Street","suburb":"Harrison","type":"Preschool to Year 10"}]

@@ -1,0 +1,47 @@
+{
+	"Test": [
+		{
+			"Name": "JSP",
+			"Age": 20,
+			"Subs": [
+				"Physics",
+				"Chemistry",
+				"Maths"
+			],
+			"Marks": [
+				10,
+				11,
+				12
+			],
+			
+		},
+		{
+			"Name": "PHP",
+			"Age": 21,
+			"Subs": [
+				"Physics",
+				"Chemistry"
+			],
+			"Marks": [
+				13,
+				14
+			]
+		},
+		{
+			"Name": "ASP",
+			"Age": 22,
+			"Subs": [
+				"Physics",
+				"Chemistry",
+				"Maths",
+				"Biology"
+			],
+			"Marks": [
+				15,
+				16,
+				17,
+				18
+			]
+		}
+	]
+}

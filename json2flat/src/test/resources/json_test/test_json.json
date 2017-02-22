@@ -1,0 +1,57 @@
+	[
+		{
+		    "store": {
+		    
+		    
+			"book": [
+			    {
+				
+				"name": "XYZ",
+				"marks":[1],
+				"actions":[
+					{
+						"name":"ccc",
+						"link":[{"id":1},{"id":2}]
+					},
+					{
+						"name":"ddd",
+						"link":[{"id":1},{"id":2},{"id":3}]
+					}
+				]
+			    }
+			],
+			"bicycle": {
+			    "color": "red",
+			    "":"",
+			    "sasa":[]
+			}
+		    },
+		    "expensive": 10
+		},
+		{
+		    "store": {
+		    
+		    
+			"book": [
+			    {
+				"marks":[1],
+				"name": "XYZ",
+				"actions":[
+					{
+						"name":"eee",
+						"link":[{"id":1},{"id":2}]
+					},
+					{
+						"name":"fff",
+						"link":[{"id":1},{"id":2},{"id":3}]
+					}
+				]
+			    }
+			],
+			"bicycle": {
+			    "color": "red"
+			}
+		    },
+		    "expensive": 10
+		}
+	]
