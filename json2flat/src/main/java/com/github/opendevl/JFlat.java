@@ -29,7 +29,7 @@ import com.jayway.jsonpath.spi.mapper.MappingProvider;
  * This class converts a Json document in a 2D matrix format like CSV.
  * 
  * @author opendevl
- * @version 1.0.4-SNAPSHOT
+ * @version 1.0.3
  */
 public class JFlat {
 	 
