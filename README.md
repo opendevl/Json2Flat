@@ -106,3 +106,6 @@ flatMe.json2Sheet().headerSeparator("_").write2csv("/path/to/destination/file.js
 ```
 
 [I'm an inline-style link with title](://opendevl.github.io/Json2Flat/ "JavaDoc")
+
+http://github.com - automatic!
+[GitHub](http://github.com)
