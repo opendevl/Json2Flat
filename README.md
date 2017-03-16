@@ -105,7 +105,4 @@ To change **/store/book/name** to **store_boot_name**
 flatMe.json2Sheet().headerSeparator("_").write2csv("/path/to/destination/file.json");
 ```
 
-[I'm an inline-style link with title](://opendevl.github.io/Json2Flat/ "JavaDoc")
-
-http://github.com - automatic!
-[GitHub](http://github.com)
+Click [here](https://opendevl.github.io/Json2Flat/) for JavaDoc.
