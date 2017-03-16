@@ -2,12 +2,8 @@ package com.github.opendevl;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
-import java.net.URL;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.EnumSet;
 import java.util.HashSet;
@@ -17,8 +13,6 @@ import java.util.Map;
 import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import org.apache.commons.io.IOUtils;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
@@ -35,7 +29,7 @@ import com.jayway.jsonpath.spi.mapper.MappingProvider;
  * This class converts a Json document in a 2D matrix format like CSV.
  * 
  * @author opendevl
- * @version 1.0.3-SNAPSHOT
+ * @version 1.0.4-SNAPSHOT
  */
 public class JFlat {
 	 
@@ -48,9 +42,6 @@ public class JFlat {
 	/*
 	 * private Configuration conf = null; private Configuration pathConf = null;
 	 */
-
-	// private DocumentContext parse = null;
-	// private DocumentContext parsePath = null;
 
 	private String tmp[] = null;
 
@@ -214,9 +205,11 @@ public class JFlat {
 			header[i] = o;
 			i++;
 		}
-
+		
+		//header of the csv
 		sheetMatrix.add(header);
-
+		
+		//adding all the content of csv
 		sheetMatrix.add(make2D(new Object[unique.size()], new Object[unique.size()], ele, "$"));
 
 		Object last[] = sheetMatrix.get(sheetMatrix.size() - 1);
@@ -248,8 +241,7 @@ public class JFlat {
 	}
 
 	/**
-	 * This method is the core algorithm which converts the Json document to its
-	 * 2D representation.
+	 * This function transforms the JSON document to its equivalent 2D representation. 
 	 * 
 	 * @param cur
 	 *            its the logical current row of the Json being processed
@@ -393,6 +385,39 @@ public class JFlat {
 
 		}
 		return false;
+	}
+	
+	/**
+	 * This method replaces the default header separator i.e. "/" with a space.	
+	 * 
+	 * @return JFlat
+	 * @throws Exception
+	 */
+	public JFlat headerSeparator() throws Exception{
+		return headerSeparator(" ");
+	}
+	
+	/**
+	 * This method replaces the default header separator i.e. "/" with a custom separator provided by user. 
+	 * 
+	 * @param separator
+	 * @return JFlat
+	 * @throws Exception
+	 */
+	public JFlat headerSeparator(String separator) throws Exception{
+		try{
+			
+			int sheetMatrixLen = this.sheetMatrix.get(0).length;
+			
+			for(int I=0; I < sheetMatrixLen; I++){
+
+				this.sheetMatrix.get(0)[I] = this.sheetMatrix.get(0)[I].toString().replaceFirst("^\\/", "").replaceAll("/", separator).trim();
+			}
+			
+		}catch(NullPointerException nullex){
+			throw new Exception("The JSON document hasn't been transformed yet. Try using json2Sheet() before using headerSeparator");
+		}
+		return this;
 	}
 
 	/**
