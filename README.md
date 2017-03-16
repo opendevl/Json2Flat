@@ -94,6 +94,14 @@ Output CSV
 
 
 If you want to remove the "**/**" from header name then use the **headerSeparator()** function e.g.
+
 ```
 flatMe.json2Sheet().headerSeparator().write2csv("/path/to/destination/file.json");
+
+The above code changes **/store/book/name** to **store boot name**
+```
+```
+flatMe.json2Sheet().headerSeparator().write2csv("/path/to/destination/file.json");
+
+This changes **/store/book/name** to **store_boot_name**
 ```
