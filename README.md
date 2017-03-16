@@ -1,6 +1,5 @@
 # Json2Flat
 This library converts **JSON** documents to **CSV**.  
-You don't need any **POJO'**s in order to convert.  
 This library uses google-gson and JsonPath for conversion.  
 
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.opendevl/json2flat/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.opendevl/json2flat)
@@ -12,7 +11,7 @@ Dependency for Maven.
 <dependency>
     <groupId>com.github.opendevl</groupId>
     <artifactId>json2flat</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
 </dependency>
 ```
 
