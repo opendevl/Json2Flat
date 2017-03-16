@@ -91,3 +91,7 @@ Output CSV
 |                  | fiction              | Evelyn Waugh       | Sword of Honour        | 12.99             | 3                   | 99                  | 89                  | 34                  | 67567               |                  |
 |                  | fiction              | Herman Melville    | Moby Dick              | 8.99              | 3                   | 99                  | 89                  |                     |                     | 0-553-21311-3    |
 |                  | fiction              | J. R. R. Tolkien   | The Lord of the Rings  | 22.99             |                     |                     |                     |                     |                     | 0-395-19395-8    |
+If you want to remove the "**/**" from header name then use the **headerSeparator()** function e.g.
+```
+flatMe.json2Sheet().headerSeparator().write2csv("/path/to/destination/file.json");
+```
