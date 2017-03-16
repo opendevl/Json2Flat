@@ -1,6 +1,5 @@
 package test.JSheet;
 
-import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
@@ -8,16 +7,12 @@ import com.github.opendevl.JFlat;
 
 public class TSheet {
 
-	public static void main(String[] args) throws IOException{
+	public static void main(String[] args) throws Exception{
 		
-		String source = TSheet.class.getResource("/json_school.json").getPath();
-		
-		String destination = TSheet.class.getResource("/json2csv.csv").getPath().split("target")[0]
-				+"src/test/resources"
-				+TSheet.class.getResource("/json2csv.csv").getPath().split("test-classes")[1];
+		String source = TSheet.class.getResource("/test.json").getPath();
 		
 		String jsonString = new String(Files.readAllBytes(Paths.get(source)));
-		
+	
 		//JFlat flatMe = new JFlat("https://raw.githubusercontent.com/kamalpradhan95/test_repo/master/store.json",fetchMode.URL);
 		JFlat flatMe = new JFlat(jsonString);
 		
@@ -35,7 +30,11 @@ public class TSheet {
 		//flatMe.json2Sheet().write2csv(destination);
 		
 		//directly write the JSON document to CSV but with delimiter
-		flatMe.json2Sheet().write2csv("/home/aptus/Desktop/test.csv", ',');
+		//flatMe.json2Sheet().write2csv("/home/aptus/Desktop/test.csv", ',');
+		flatMe
+				.json2Sheet()
+				.headerSeparator()
+				.write2csv("/home/aptus/Desktop/test.csv");
 		//System.out.println(flatMe.json2Sheet().getUniqueFields());
 		
 	}
