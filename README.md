@@ -4,8 +4,6 @@ This library uses google-gson and JsonPath for conversion.
 
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.opendevl/json2flat/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.opendevl/json2flat)
 
-[![Coverage Status](https://coveralls.io/repos/github/opendevl/Json2Flat/badge.svg?branch=master)](https://coveralls.io/github/opendevl/Json2Flat?branch=master)
-
 Dependency for Maven. 
 ```xml
 <dependency>
