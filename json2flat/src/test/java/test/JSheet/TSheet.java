@@ -9,7 +9,7 @@ public class TSheet {
 
 	public static void main(String[] args) throws Exception{
 		
-		String source = TSheet.class.getResource("/test.json").getPath();
+		String source = TSheet.class.getResource("/tmp.json").getPath();
 		
 		String jsonString = new String(Files.readAllBytes(Paths.get(source)));
 	
