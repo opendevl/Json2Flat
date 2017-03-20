@@ -28,7 +28,8 @@
 
 	<licenses>
 		<license>
-			<name>Creative Commons</name>
+			<name>Apache License, Version 2.0</name>
+			<url>https://github.com/opendevl/Json2Flat/blob/master/LICENSE</url>
 		</license>
 	</licenses>
 
@@ -82,11 +83,8 @@
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-io -->
-		<!-- <dependency>
-			<groupId>org.apache.commons</groupId>
-			<artifactId>commons-io</artifactId>
-			<version>1.3.2</version>
-		</dependency> -->
+		<!-- <dependency> <groupId>org.apache.commons</groupId> <artifactId>commons-io</artifactId> 
+			<version>1.3.2</version> </dependency> -->
 
 		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
 		<dependency>
