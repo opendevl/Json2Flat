@@ -1,7 +1,7 @@
 # Json2Flat
 This library converts **JSON** documents to **CSV**.  
 It uses google-gson and JsonPath for conversion.  
-Click [here](https://j2flateval.herokuapp.com/) for a quick evaluation.  
+Click [here](https://j2flateval.herokuapp.com/) for a **quick evaluation.**  
 
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.opendevl/json2flat/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.opendevl/json2flat)
 
