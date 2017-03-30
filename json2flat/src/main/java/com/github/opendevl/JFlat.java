@@ -1,9 +1,6 @@
 package com.github.opendevl;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.PrintWriter;
-import java.io.UnsupportedEncodingException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.EnumSet;
 import java.util.HashSet;
@@ -465,20 +462,34 @@ public class JFlat {
 	public void write2csv(String destination, char delimiter)
 			throws FileNotFoundException, UnsupportedEncodingException {
 		PrintWriter writer = new PrintWriter(new File(destination), "UTF-8");
+		writer.write(write2csv(delimiter));
+		writer.close();
+	}
+
+
+    /**
+     * This method returns the 2D representation in csv format as string with custom
+     * delimiter set by user.
+     *
+     * @param delimiter
+     *            it represents the delimiter set by user.
+	 */
+	public String write2csv(char delimiter) {
 		boolean comma = false;
+		StringBuffer buffer = new StringBuffer();
 		for (Object[] o : this.sheetMatrix) {
 			comma = false;
 			for (Object t : o) {
 				if (t == null) {
-					writer.print(comma == true ? delimiter : "");
+					buffer.append(comma ? String.valueOf(delimiter): "");
 				} else {
-					writer.print(comma == true ? delimiter + t.toString() : t.toString());
+					buffer.append(comma ? delimiter + t.toString() : t.toString());
 				}
-				if (comma == false)
+				if (!comma)
 					comma = true;
 			}
-			writer.println();
+			buffer.append("\n");
 		}
-		writer.close();
+		return buffer.toString();
 	}
 }
