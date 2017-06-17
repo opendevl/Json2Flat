@@ -1,9 +1,7 @@
 package test.JSheet;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.io.UnsupportedEncodingException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -41,6 +39,8 @@ public class Parse {
 	static List<String> unique = null;
 
 	static String tmpPath = null;
+	
+	static int rowCount = 0;
 
 	/**
 	 * just for testing
@@ -55,7 +55,7 @@ public class Parse {
 		JsonElement x = new JsonParser()
 		.parse(
 				new String(
-						Files.readAllBytes(Paths.get("/home/aptus/workspace/mvgitproj/Json2Flat/json2flat/src/test/resources/json_school.json"))));
+						Files.readAllBytes(Paths.get("/home/aptus/workspace/mvgitproj/Json2Flat/json2flat/src/test/resources/EPL_JSON.json"))));
 		Configuration.setDefaults(new Configuration.Defaults() {
 			private final JsonProvider jsonProvider = new JacksonJsonProvider();
 			private final MappingProvider mappingProvider = new JacksonMappingProvider();
@@ -171,11 +171,13 @@ public class Parse {
 		System.out.println("Writing start...");
 		PrintWriter writer = new PrintWriter("/home/aptus/Desktop/xyz.csv", "UTF-8");
 		boolean comma = false;
+		System.out.println("row count = "+rowCount);
+		System.out.println("size of arr = "+arr.size());
 		for (Object[] o : arr) {
 			comma = false;
 			for (Object t : o) {
 				if (t == null) {
-					writer.print(comma == true ? "," : "");
+					writer.print(comma == true ? ",-" : "-");
 				} else {
 					writer.print(comma == true ? ",\"" + t.toString() + "\"" : t.toString());
 				}
@@ -281,18 +283,21 @@ public class Parse {
 				} else {
 					if (tmp.isJsonObject()) {
 						gotArray = isInnerArray(tmp);
+						rowCount++;
 						/*arr.add(make2D(new Object[unique.size()], cur, tmp.getAsJsonObject(), path + arrIndex + "/"));*/
 						arr.add(make2D(new Object[unique.size()], cur, tmp.getAsJsonObject(), path +"[" + arrIndex + "]"));
-						if (gotArray) {
+						/*if (gotArray) {
 							arr.remove(arr.size() - 1);
-						}
+						}*/
 					} else if (tmp.isJsonArray()) {
+						rowCount++;
 						/*make2D(new Object[unique.size()], cur, tmp.getAsJsonArray(), path + arrIndex + "//");*/
 						make2D(new Object[unique.size()], cur, tmp.getAsJsonArray(), path+"["+arrIndex+"]");
 					}
 
 				}
 				arrIndex++;
+				//rowCount++;
 			}
 		}
 		return cur;
@@ -305,7 +310,12 @@ public class Parse {
 			////System.out.println((i++) + ")  " + entry.getKey() + " --> " + entry.getValue());
 			if (entry.getValue().isJsonArray()) {
 				if (entry.getValue().getAsJsonArray().size() > 0)
-					return true;
+					for (JsonElement checkPrimitive : entry.getValue().getAsJsonArray()) {
+
+						if (checkPrimitive.isJsonObject()) {
+							return true;
+						}
+					}
 			}
 			// //System.out.println(i++);
 

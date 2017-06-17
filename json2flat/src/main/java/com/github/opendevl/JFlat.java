@@ -149,6 +149,8 @@ public class JFlat {
 		DocumentContext parse = null;
 
 		sheetMatrix = new ArrayList<Object[]>();
+		
+		System.out.println(this.jsonString);
 
 		ele = new JsonParser().parse(this.jsonString);
 
