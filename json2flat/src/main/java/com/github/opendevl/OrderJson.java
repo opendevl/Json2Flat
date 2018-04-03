@@ -48,7 +48,8 @@ public class OrderJson {
 					jsonArr.put(entry.getKey(), entry.getValue());
 					
 				} else if (entry.getValue().getClass().getSimpleName().equals("LinkedTreeMap")){
-					//if object is of type LinkedTreeMap(JsonObject)puts it to jsonObj Map 
+					//Fixex #27
+					//if object is of type LinkedTreeMap(JsonObject)puts it to jsonObj Map
 					jsonObj.put(entry.getKey(), entry.getValue());
 				}
 				else{

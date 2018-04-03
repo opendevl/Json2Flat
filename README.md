@@ -1,18 +1,16 @@
 # Json2Flat
 This library converts **JSON** documents to **CSV**.  
-You don't need any **POJO'**s in order to convert.  
-This library uses google-gson and JsonPath for conversion.  
+It uses google-gson and JsonPath for conversion.  
+Click [here](https://j2flateval.herokuapp.com/) for a **quick evaluation.**  
 
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.opendevl/json2flat/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.opendevl/json2flat)
-
-[![Coverage Status](https://coveralls.io/repos/github/opendevl/Json2Flat/badge.svg?branch=master)](https://coveralls.io/github/opendevl/Json2Flat?branch=master)
 
 Dependency for Maven. 
 ```xml
 <dependency>
     <groupId>com.github.opendevl</groupId>
     <artifactId>json2flat</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.4-SNAPSHOT</version>
 </dependency>
 ```
 
@@ -92,3 +90,18 @@ Output CSV
 |                  | fiction              | Evelyn Waugh       | Sword of Honour        | 12.99             | 3                   | 99                  | 89                  | 34                  | 67567               |                  |
 |                  | fiction              | Herman Melville    | Moby Dick              | 8.99              | 3                   | 99                  | 89                  |                     |                     | 0-553-21311-3    |
 |                  | fiction              | J. R. R. Tolkien   | The Lord of the Rings  | 22.99             |                     |                     |                     |                     |                     | 0-395-19395-8    |
+
+
+If you want to remove the "**/**" from header name then use the **headerSeparator()** function e.g.
+
+To change **/store/book/name** to **store book name**
+```
+flatMe.json2Sheet().headerSeparator().write2csv("/path/to/destination/file.json");
+```
+
+To change **/store/book/name** to **store_book_name**
+```
+flatMe.json2Sheet().headerSeparator("_").write2csv("/path/to/destination/file.json");
+```
+
+Click [here](https://opendevl.github.io/Json2Flat/) for JavaDoc.
