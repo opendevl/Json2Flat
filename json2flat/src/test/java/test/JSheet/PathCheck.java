@@ -26,7 +26,7 @@ public class PathCheck {
 				
 		DocumentContext tt = JsonPath.using(conf123).parse(x.toString());
 		
-		/*List<String> pathList = JsonPath.using(conf123).parse(new File("/home/aptus/workspace/mvgitproj/Json2Flat/json2flat/src/test/resources/test.json"))
+		/*List<String> pathList = JsonPath.using(conf123).parse(new File("/home/workspace/mvgitproj/Json2Flat/json2flat/src/test/resources/test.json"))
 				.read("$['store']");*/
 		
 		List<String> pathList = tt.read("$..*");

@@ -13,7 +13,7 @@ public class TestForJObject {
 	public static void main(String args[]) throws IOException{
 		OrderJson haveOrder = new OrderJson();
 		
-		String source = TSheet.class.getResource("/tmp.json").getPath();
+		String source = TSheet.class.getResource("/json_order.json").getPath();
 		String jsonString = new String(Files.readAllBytes(Paths.get(source)));
 		
 		JsonElement test = new JsonParser().parse(jsonString);

@@ -55,7 +55,7 @@ public class Parse {
 		JsonElement x = new JsonParser()
 		.parse(
 				new String(
-						Files.readAllBytes(Paths.get("/home/aptus/workspace/mvgitproj/Json2Flat/json2flat/src/test/resources/json_school.json"))));
+						Files.readAllBytes(Paths.get("/home/workspace/mvgitproj/Json2Flat/json2flat/src/test/resources/json_school.json"))));
 		Configuration.setDefaults(new Configuration.Defaults() {
 			private final JsonProvider jsonProvider = new JacksonJsonProvider();
 			private final MappingProvider mappingProvider = new JacksonMappingProvider();

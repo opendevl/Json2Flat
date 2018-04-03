@@ -47,11 +47,16 @@ public class OrderJson {
 					//if Object is of type ArrayList push it to jsonArr Map
 					jsonArr.put(entry.getKey(), entry.getValue());
 					
-				}else{
+				} else if (entry.getValue().getClass().getSimpleName().equals("LinkedTreeMap")){
+					//if object is of type LinkedTreeMap(JsonObject)puts it to jsonObj Map 
+					jsonObj.put(entry.getKey(), entry.getValue());
+				}
+				else{
 					
 					//if Object is of type Premitive push it to jsonPre.
 					jsonPre.put(entry.getKey(), entry.getValue());
 				}
+				
 			}catch(Exception ex){
 				ex.printStackTrace();
 			}
@@ -61,11 +66,12 @@ public class OrderJson {
 		
 		/* Keeping Order - 
 		 * 		1) JSON premitive
-		 * 		2) JSON Array
-		 * 		3) JSON Object ( order of JSON Object is yet to be descided)
+		 * 		2) JSON Object
+		 * 		3) JSON Array
 		 * */
 		
 		//appending jsonArr map to jsonPre map in order to mantain order.
+		jsonPre.putAll(jsonObj);
 		jsonPre.putAll(jsonArr);
 		
 		//reconstructing the JSON from Map Objects and returning
