@@ -1,0 +1,50 @@
+private void saveJsonTranslatedData(String data, String path)throws IOException{
+        StringBuffer jsonData = new StringBuffer(data);
+        jsonData.insert(1, '\n');
+        int tabTracker = 0;
+        int bracketCounter = 0;
+        for(int i = 3; i < jsonData.length(); i++){
+
+
+            if (jsonData.charAt(i) == '{') {
+                i = i+1;
+                tabTracker++;
+                bracketCounter++;
+                jsonData.insert(i, '\n');
+                if (bracketCounter >= 1) {
+                    for (int x = 0; x <= tabTracker; x++) {
+                        if (x == 0)
+                            jsonData.insert(++i, '\t');
+                        else
+                            jsonData.insert(i, '\t');
+                        i++;
+                    }
+                }
+            }
+            if(jsonData.charAt(i) == ','){
+                jsonData.insert(++i, '\n');
+                for (int x = 0; x<= tabTracker; x++){
+                    if(x == 0)
+                        jsonData.insert(++i, '\t');
+                    else
+                        jsonData.insert(i, '\t');
+                    i++;
+                }
+                i++;
+            }
+            if(jsonData.charAt(i) == '}'){
+                jsonData.insert(i, '\n');
+                tabTracker--;
+                for (int x = 0; x<= tabTracker; x++){
+                    if(x==0)
+                        jsonData.insert(++i, '\t');
+                    else
+                        jsonData.insert(i, '\t');
+                    i++;
+                }
+                i++;
+            }
+        }
+        Path filename = Path.of(path);
+        Files.writeString(filename, jsonData.toString());
+    }
